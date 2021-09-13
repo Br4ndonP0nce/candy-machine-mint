@@ -242,9 +242,9 @@ const Home = (props: HomeProps) => {
 
 </main>
 <div className=" home-container flex flex-col items-center justify-center">
-  
-    <p className="mb-4 text-2xl text-center font-bold text-black text-opacity-90">3 SOL/mint</p>
-    <p className="text-lg font-bold text-black text-opacity-90 mb-4">Grab yourself a piece of dat cake</p>
+    <img src="/logo.png" alt="Deadass logo" width="300"/>
+              
+    
     
    
 
@@ -256,13 +256,14 @@ const Home = (props: HomeProps) => {
   <main className="mt-10 mb-6 home-container flex flex-col items-center">
 <p className="text-2xl"> Check us out</p>
 <p className="mt-6 text-lg"> Next best collection available on
-<div className="flex flex-col">
+<div className="flex flex-col items-center ">
   <img className = "mt-3"src="./de-logo.png" alt="DigitalEyes" width="219" height="40"/>
-  <img src="" alt="" />
-  
+  <div className="flex items-start">
+  <img className ="" src="./deadass.png" alt="" width="200" height="50" />
+  </div>
 
 </div>
-<p className="text-2xl px-10 py-2">Deadass tho...</p>
+
 
 </p>
 </main>
