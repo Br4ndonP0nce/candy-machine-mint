@@ -38,7 +38,7 @@ export interface HomeProps {
 }
 
 const Home = (props: HomeProps) => {
-  
+  //const [balance, setBalance] = useState<number>();
   const [isActive, setIsActive] = useState(false); // true when countdown completes
   const [isSoldOut, setIsSoldOut] = useState(false); // true when items remaining is zero
   const [isMinting, setIsMinting] = useState(false); // true when user got to press MINT
@@ -113,8 +113,8 @@ const Home = (props: HomeProps) => {
       });
     } finally {
       if (wallet?.publicKey) {
-        const balance = await props.connection.getBalance(wallet?.publicKey);
-        setBalance(balance / LAMPORTS_PER_SOL);
+        //const balance = await props.connection.getBalance(wallet?.publicKey);
+        //setBalance(balance / LAMPORTS_PER_SOL);
       }
       setIsMinting(false);
     }
@@ -124,7 +124,7 @@ const Home = (props: HomeProps) => {
     (async () => {
       if (wallet?.publicKey) {
         const balance = await props.connection.getBalance(wallet.publicKey);
-        setBalance(balance / LAMPORTS_PER_SOL);
+        //setBalance(balance / LAMPORTS_PER_SOL);
       }
     })();
   }, [wallet, props.connection]);
