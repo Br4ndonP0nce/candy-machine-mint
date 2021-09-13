@@ -4,7 +4,7 @@ import Countdown from "react-countdown";
 import { Button, CircularProgress, Snackbar } from "@material-ui/core";
 import Alert from "@material-ui/lab/Alert";
 import * as anchor from "@project-serum/anchor";
-import { LAMPORTS_PER_SOL } from "@solana/web3.js";
+//import { LAMPORTS_PER_SOL } from "@solana/web3.js";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { WalletDialogButton } from "@solana/wallet-adapter-material-ui";
 
@@ -171,7 +171,7 @@ const Home = (props: HomeProps) => {
 
         <div className="flex items-center gap-2">
         <img className='w-20'src="/like-this.png" alt="mainIcon" />
-          <a href="#" className="font-bold text-xl text-indigo-600 px-5">DeadAss SOL</a>
+          <a href="https://deadass.io/" className="font-bold text-xl text-indigo-600 px-5">DeadAss SOL</a>
           
           <button className="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden" id="navbar-toggle">
             <i className="fas fa-bars"></i>
