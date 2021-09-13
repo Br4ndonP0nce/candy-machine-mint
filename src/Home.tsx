@@ -3,11 +3,8 @@ import styled from "styled-components";
 import Countdown from "react-countdown";
 import { Button, CircularProgress, Snackbar } from "@material-ui/core";
 import Alert from "@material-ui/lab/Alert";
-
 import * as anchor from "@project-serum/anchor";
-
 import { LAMPORTS_PER_SOL } from "@solana/web3.js";
-
 import { useWallet } from "@solana/wallet-adapter-react";
 import { WalletDialogButton } from "@solana/wallet-adapter-material-ui";
 
@@ -19,13 +16,17 @@ import {
   shortenAddress,
 } from "./candy-machine";
 
-const ConnectButton = styled(WalletDialogButton)``;
+const ConnectButton = styled(WalletDialogButton)`
+
+`;
 
 const CounterText = styled.span``; // add your styles here
 
 const MintContainer = styled.div``; // add your styles here
 
-const MintButton = styled(Button)``; // add your styles here
+const MintButton = styled(Button)`margin: 1em
+background-color: #008CBA;`; // add your styles here
+
 
 export interface HomeProps {
   candyMachineId: anchor.web3.PublicKey;
@@ -159,20 +160,60 @@ const Home = (props: HomeProps) => {
   }, [wallet, props.candyMachineId, props.connection]);
 
   return (
-    <main>
-      {wallet.connected && (
-        <p>Address: {shortenAddress(wallet.publicKey?.toBase58() || "")}</p>
+    
+      <main>
+        
+        
+            <div className="header-2">
+
+    <header className=" py-2 md:py-2 ">
+      <div className="flex items-center justify-between py-3 px-5 md:px-10 ">
+
+        <div className="flex items-center gap-2">
+        <img className='w-20'src="/like-this.png" alt="mainIcon" />
+          <a href="#" className="font-bold text-xl text-indigo-600 px-5">DeadAss SOL</a>
+          
+          <button className="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden" id="navbar-toggle">
+            <i className="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <div className="hidden md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0" id="navbar-collapse">
+          <a href="https://twitter.com/deadasssol" className="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">
+          <img src="/icons/twitter-logoBlue.png" alt="" height="30" width="30"/>
+          </a>
+          <a href="https://discord.gg/Tc9P6JDX" className="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300"><img src="/icons/discord_logo.png" alt="" height="25" width="25"/></a>
+          
+          
+        </div>
+      </div>
+    </header>
+    </div>
+
+
+<div className="flex flex-col items-center bg-gradient-to-r from-yellow-400 to-pink-400">
+  <div className="flex flex-row justify-between flex-wrap gap-5">
+  <main className="mt-10 mb-6 home-container flex flex-col items-center">
+    <p className="mb-4 text-2xl text-center font-bold text-black text-opacity-90">3 SOL/mint</p>
+    <p className="text-lg font-bold text-black text-opacity-90 mb-4">Grab yourself a piece of dat cake</p>
+    <div className="imageCointainer">
+      <img src="./stronkAss.gif" alt="" width="450" className="gif" />
+    </div>
+    <div className= "py-20 px-20 height-40">
+    {wallet.connected && (
+        <div className="flex items-center">
+        <p>Connected with {shortenAddress(wallet.publicKey?.toBase58() || "")}</p>
+        </div>
       )}
 
-      {wallet.connected && (
-        <p>Balance: {(balance || 0).toLocaleString()} SOL</p>
-      )}
-
+      
       <MintContainer>
         {!wallet.connected ? (
-          <ConnectButton>Connect Wallet</ConnectButton>
+          <ConnectButton >Connect Wallet</ConnectButton>
         ) : (
+          
           <MintButton
+          
             disabled={isSoldOut || isMinting || !isActive}
             onClick={onMint}
             variant="contained"
@@ -194,9 +235,82 @@ const Home = (props: HomeProps) => {
               />
             )}
           </MintButton>
+          
         )}
       </MintContainer>
+      </div>
 
+</main>
+<div className=" home-container flex flex-col items-center justify-center">
+  
+    <p className="mb-4 text-2xl text-center font-bold text-black text-opacity-90">3 SOL/mint</p>
+    <p className="text-lg font-bold text-black text-opacity-90 mb-4">Grab yourself a piece of dat cake</p>
+    
+   
+
+</div>
+
+</div>
+</div>
+<section className="bg-gradient-to-r from-pink-400 to-yellow-400 h-80 flex flex-col items-center">
+  <main className="mt-10 mb-6 home-container flex flex-col items-center">
+<p className="text-2xl"> Check us out</p>
+<p className="mt-6 text-lg"> Next best collection available on
+<div className="flex flex-col">
+  <img className = "mt-3"src="./de-logo.png" alt="DigitalEyes" width="219" height="40"/>
+  <img src="" alt="" />
+  
+
+</div>
+<p className="text-2xl px-10 py-2">Deadass tho...</p>
+
+</p>
+</main>
+
+</section >
+
+<section className="Roadmap bg-red-300 h-96 flex flex-col items-center">
+  <div className="box h-96 w-96 bg-black flex flex-col items-center">
+  <p className="text-2xl font-bold uppercase text-white">RoadMap</p>
+  </div>
+  <img src="" alt="" />
+
+</section>
+
+<section className="Team bg-pink-300 ">
+  <div className="flex flex-row justify-between flex-wrap">
+  <div className="flex flex-col items-center">
+  <img className ="logo-exchange mt-6 rounded-xl border white border-4" src="./like-this.png" width="150"alt="" />
+  <p>Assgod</p>
+  <p className="text-md mt2 font-medium text-gray-200"></p>
+  </div>
+  <div className="flex flex-col items-center">
+  <img className ="logo-exchange mt-6 rounded-xl border white border-4" src="./like-this.png" width="150"alt="" />
+  <p>Assgod</p>
+  <p className="text-md mt2 font-medium text-gray-200"></p>
+  </div>
+  <div className="flex flex-col items-center">
+  <img className ="logo-exchange mt-6 rounded-xl border white border-4" src="./like-this.png" width="150"alt="" />
+  <p>Assgod</p>
+  <p className="text-md mt2 font-medium text-gray-200"></p>
+  </div>
+  <div className="flex flex-col items-center">
+  <img className ="logo-exchange mt-6 rounded-xl border white border-4" src="./like-this.png" width="150"alt="" />
+  <p>Assgod</p>
+  <p className="text-md mt2 font-medium text-gray-200"></p>
+  </div>
+  </div>
+  
+
+</section>
+
+
+
+    
+    
+        
+        
+        
       <Snackbar
         open={alertState.open}
         autoHideDuration={6000}
@@ -209,7 +323,7 @@ const Home = (props: HomeProps) => {
           {alertState.message}
         </Alert>
       </Snackbar>
-    </main>
+      </main>
   );
 };
 
