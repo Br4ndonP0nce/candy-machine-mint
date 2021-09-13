@@ -123,7 +123,7 @@ const Home = (props: HomeProps) => {
   useEffect(() => {
     (async () => {
       if (wallet?.publicKey) {
-        const balance = await props.connection.getBalance(wallet.publicKey);
+        //const balance = await props.connection.getBalance(wallet.publicKey);
         //setBalance(balance / LAMPORTS_PER_SOL);
       }
     })();
