@@ -175,7 +175,7 @@ const Home = (props: HomeProps) => {
           <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
             <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
               <div className="flex items-center justify-between w-full md:w-auto">
-                <a href="#">
+                <a href="https://discord.gg/Tc9P6JDX">
                   <span className="sr-only">Workflow</span>
                   <img className="h-8 w-auto sm:h-10" src=""></img>
                 </a>
@@ -189,13 +189,13 @@ const Home = (props: HomeProps) => {
               </div>
             </div>
             <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-              <a href="#" className="font-medium text-gray-500 hover:text-gray-900">ASS</a>
+              <a href="https://discord.gg/Tc9P6JDX" className="font-medium text-gray-500 hover:text-gray-900">ASS</a>
 
-              <a href="#" className="font-medium text-gray-500 hover:text-gray-900">ASS</a>
+              <a href="https://discord.gg/Tc9P6JDX" className="font-medium text-gray-500 hover:text-gray-900">ASS</a>
 
-              <a href="#" className="font-medium text-gray-500 hover:text-gray-900">ASS</a>
+              <a href="https://discord.gg/Tc9P6JDX" className="font-medium text-gray-500 hover:text-gray-900">ASS</a>
 
-              <a href="#" className="font-medium text-gray-500 hover:text-gray-900">ASS</a>
+              <a href="https://discord.gg/Tc9P6JDX" className="font-medium text-gray-500 hover:text-gray-900">ASS</a>
               
               
               
