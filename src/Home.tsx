@@ -241,9 +241,10 @@ const Home = (props: HomeProps) => {
       <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
         <div className="sm:text-center lg:text-left">
           <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-            <span className="block xl:inline">NFT cake</span>
-            <span className="block text-indigo-600 xl:inline">Deadass Tho</span>
+            <span className="block xl:inline">NFT cake </span>
+            <span className="block text-indigo-600 xl:inline">Deadass </span>
           </h1>
+          
           <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
             The First Ass in Defi
           </p>
@@ -302,7 +303,8 @@ const Home = (props: HomeProps) => {
       <div className="flex bg-blue-100 items-center justify-between py-3 px-5 md:px-10 ">
 
         <div className="flex items-center gap-2">
-          <span className="block text-indigo-600 xl:inline px-3">DeadAss SOL</span>
+          <h1><span className="block text-indigo-600 xl:inline ">DeadAss SOL</span></h1>
+          
           <button className="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden" id="navbar-toggle">
             <i className="fas fa-bars"></i>
           </button>
