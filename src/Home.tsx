@@ -1,20 +1,20 @@
-import { useEffect, useState } from "react";
-import styled from "styled-components";
-import Countdown from "react-countdown";
-import { Button, CircularProgress, Snackbar } from "@material-ui/core";
-import Alert from "@material-ui/lab/Alert";
-import * as anchor from "@project-serum/anchor";
+//import { useEffect, useState } from "react";
+//import styled from "styled-components";
+//import Countdown from "react-countdown";
+//import { Button, CircularProgress, Snackbar } from "@material-ui/core";
+//import Alert from "@material-ui/lab/Alert";
+//import * as anchor from "@project-serum/anchor";
 //import { LAMPORTS_PER_SOL } from "@solana/web3.js";
-import { useWallet } from "@solana/wallet-adapter-react";
-import { WalletDialogButton } from "@solana/wallet-adapter-material-ui";
+//import { useWallet } from "@solana/wallet-adapter-react";
+//import { WalletDialogButton } from "@solana/wallet-adapter-material-ui";
 
-import {
-  CandyMachine,
-  awaitTransactionSignatureConfirmation,
-  getCandyMachineState,
-  mintOneToken,
-  shortenAddress,
-} from "./candy-machine";
+//import {
+ // CandyMachine,
+  //awaitTransactionSignatureConfirmation,
+  //getCandyMachineState,
+  //mintOneToken,
+  //shortenAddress,
+//} from "./candy-machine";
 
 //const ConnectButton = styled(WalletDialogButton)`
 
