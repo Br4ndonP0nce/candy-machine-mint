@@ -16,16 +16,16 @@ import {
   shortenAddress,
 } from "./candy-machine";
 
-const ConnectButton = styled(WalletDialogButton)`
+//const ConnectButton = styled(WalletDialogButton)`
 
-`;
+//`;
 
-const CounterText = styled.span``; // add your styles here
+//const CounterText = styled.span``; // add your styles here
 
-const MintContainer = styled.div``; // add your styles here
+//const MintContainer = styled.div``; // add your styles here
 
-const MintButton = styled(Button)`margin: 1em
-background-color: #008CBA;`; // add your styles here
+//const MintButton = styled(Button)`margin: 1em
+//background-color: #008CBA;`; // add your styles here
 
 /*
 export interface HomeProps {
@@ -336,7 +336,7 @@ const Home = () => {
           {alertState.message}
         </Alert>
       </Snackbar>
-*/
+
 interface AlertState {
   open: boolean;
   message: string;
@@ -350,5 +350,6 @@ const renderCounter = ({ days, hours, minutes, seconds, completed }: any) => {
     </CounterText>
   );
 };
+*/
 
 export default Home;
