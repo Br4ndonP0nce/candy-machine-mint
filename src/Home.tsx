@@ -27,7 +27,7 @@ const MintContainer = styled.div``; // add your styles here
 const MintButton = styled(Button)`margin: 1em
 background-color: #008CBA;`; // add your styles here
 
-
+/*
 export interface HomeProps {
   candyMachineId: anchor.web3.PublicKey;
   config: anchor.web3.PublicKey;
@@ -36,9 +36,11 @@ export interface HomeProps {
   treasury: anchor.web3.PublicKey;
   txTimeout: number;
 }
-
-const Home = (props: HomeProps) => {
+*/
+//const Home = (props: HomeProps) => {
+const Home = () => {
   //const [balance, setBalance] = useState<number>();
+  /*
   const [isActive, setIsActive] = useState(false); // true when countdown completes
   const [isSoldOut, setIsSoldOut] = useState(false); // true when items remaining is zero
   const [isMinting, setIsMinting] = useState(false); // true when user got to press MINT
@@ -158,7 +160,8 @@ const Home = (props: HomeProps) => {
       setCandyMachine(candyMachine);
     })();
   }, [wallet, props.candyMachineId, props.connection]);
-/*
+*/
+  /*
 <div className="header-2">
 
     <header className=" py-2 md:py-2 ">
@@ -316,7 +319,12 @@ const Home = (props: HomeProps) => {
         
         
         
-      <Snackbar
+     
+      </main>
+  );
+};
+/*
+ <Snackbar
         open={alertState.open}
         autoHideDuration={6000}
         onClose={() => setAlertState({ ...alertState, open: false })}
@@ -328,10 +336,7 @@ const Home = (props: HomeProps) => {
           {alertState.message}
         </Alert>
       </Snackbar>
-      </main>
-  );
-};
-
+*/
 interface AlertState {
   open: boolean;
   message: string;

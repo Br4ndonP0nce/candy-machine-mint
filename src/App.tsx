@@ -51,12 +51,12 @@ const App = () => {
       <WalletProvider wallets={wallets} autoConnect>
         <WalletDialogProvider>
           <Home
-            candyMachineId={candyMachineId}
-            config={config}
-            connection={connection}
-            startDate={startDateSeed}
-            treasury={treasury}
-            txTimeout={txTimeout}
+            //candyMachineId={candyMachineId}
+            //config={config}
+            //connection={connection}
+            //startDate={startDateSeed}
+            //treasury={treasury}
+            //txTimeout={txTimeout}
           />
         </WalletDialogProvider>
       </WalletProvider>
