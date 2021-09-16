@@ -50,7 +50,16 @@ const App = () => {
     <ConnectionProvider endpoint={endpoint}>
       <WalletProvider wallets={wallets} autoConnect>
         <WalletDialogProvider>
-          <Home
+        <body className="flex items-center justify-center h-screen bg-gradient-to-b from-green-200 to-green-500" >
+            <span className="flex items-center justify-center"><img src="./images/comingsoon.png" alt="Coming soon" height="120" width="500" /></span>
+        </body>
+          
+        </WalletDialogProvider>
+      </WalletProvider>
+    </ConnectionProvider>
+  );
+};/*
+<Home
             candyMachineId={candyMachineId}
             config={config}
             connection={connection}
@@ -58,10 +67,5 @@ const App = () => {
             treasury={treasury}
             txTimeout={txTimeout}
           />
-        </WalletDialogProvider>
-      </WalletProvider>
-    </ConnectionProvider>
-  );
-};
-
+*/
 export default App;
