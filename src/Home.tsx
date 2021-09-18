@@ -5,7 +5,7 @@ import { Button, CircularProgress, Snackbar } from "@material-ui/core";
 import Alert from "@material-ui/lab/Alert";
 import * as anchor from "@project-serum/anchor";
 //import { LAMPORTS_PER_SOL } from "@solana/web3.js";
-import { useWallet } from "@solana/wallet-adapter-react";
+//import { useWallet } from "@solana/wallet-adapter-react";
 import { WalletDialogButton } from "@solana/wallet-adapter-material-ui";
 import leftBottomAss from "./images/left_bottom_ass.png";
 import rightBottomAss from "./images/right_bottom_ass.png";
@@ -13,10 +13,7 @@ import croppedAss from "./images/centre ass cropped.png";
 import oneAss from "./images/ASSES/18.png";
 import twAss from "./images/ASSES/201.png";
 import trAss from "./images/ASSES/178.png";
-import frAss from "./images/ASSES/135.png";
-import fvAss from "./images/ASSES/34.png";
-import sixAss from "./images/ASSES/178.png";
-import beeAss from "./images/ASSES/SpecialAsses/Bee Ass.png";
+import { useAnchorWallet } from "@solana/wallet-adapter-react";
 import titanAss from "./images/ASSES/SpecialAsses/Titan Ass.png";
 import msCaptain from "./images/ASSES/SpecialAsses/Mrs. Captain Ass.png";
 import giraffe from "./images/ASSES/SpecialAsses/Giraffe Ass.png";
@@ -25,14 +22,9 @@ import blue from "./images/ASSES/SpecialAsses/Blue Ass.png";
 import kong from "./images/ASSES/SpecialAsses/Kong Ass.png";
 import money from "./images/ASSES/SpecialAsses/Money Ass.png";
 import biker from "./images/ASSES/SpecialAsses/Biker Ass.png";
-import green from "./images/ASSES/SpecialAsses/Green Ass.png";
-import monroe from "./images/ASSES/SpecialAsses/Monroe Ass.png";
-import pink from "./images/ASSES/SpecialAsses/Pink Ass.png";
-import wrestling from "./images/ASSES/SpecialAsses/Wrestling Ass.png";
-import flat from "./images/ASSES/SpecialAsses/World's Flattest Ass.png";
+
 import yellow from "./images/ASSES/SpecialAsses/Yellow Ass.png";
-import yoga from "./images/ASSES/SpecialAsses/Yoga Ass.png";
-import star from "./images/ASSES/SpecialAsses/Star Ass.png";
+
 import superAss from "./images/ASSES/SpecialAsses/Super Ass.png";
 
 import {
@@ -75,13 +67,13 @@ const Home = (props: HomeProps) => {
 
   const [startDate, setStartDate] = useState(new Date(props.startDate));
 
-  const wallet = useWallet();
+  const wallet = useAnchorWallet();
   const [candyMachine, setCandyMachine] = useState<CandyMachine>();
 
   const onMint = async () => {
     try {
       setIsMinting(true);
-      if (wallet.connected && candyMachine?.program && wallet.publicKey) {
+      if (wallet && candyMachine?.program) {
         const mintTxId = await mintOneToken(
           candyMachine,
           props.config,
@@ -136,7 +128,7 @@ const Home = (props: HomeProps) => {
         severity: "error",
       });
     } finally {
-      if (wallet?.publicKey) {
+      if (wallet) {
         //const balance = await props.connection.getBalance(wallet?.publicKey);
         //setBalance(balance / LAMPORTS_PER_SOL);
       }
@@ -146,7 +138,7 @@ const Home = (props: HomeProps) => {
 
   useEffect(() => {
     (async () => {
-      if (wallet?.publicKey) {
+      if (wallet) {
         //const balance = await props.connection.getBalance(wallet.publicKey);
         //setBalance(balance / LAMPORTS_PER_SOL);
       }
@@ -155,12 +147,7 @@ const Home = (props: HomeProps) => {
 
   useEffect(() => {
     (async () => {
-      if (
-        !wallet ||
-        !wallet.publicKey ||
-        !wallet.signAllTransactions ||
-        !wallet.signTransaction
-      ) {
+      if (!wallet) {
         return;
       }
 
@@ -172,7 +159,7 @@ const Home = (props: HomeProps) => {
 
       const { candyMachine, goLiveDate, itemsRemaining } =
         await getCandyMachineState(
-          anchorWallet,
+          wallet as anchor.Wallet,
           props.candyMachineId,
           props.connection
         );
@@ -332,13 +319,13 @@ const Home = (props: HomeProps) => {
       <div className=" relative min-h-full py-10 flex flex-col-3 justify-center h-screen bg-purple-600">
         <img
           className=" absolute bottom-0 left-0 h-100 w-60"
-          src="./images/left_bottom_ass.png"
+          src={leftBottomAss}
           alt=""
           height="50%"
         />
         <img
           className=" absolute bottom-0 right-0 h-100 w-60"
-          src="./images/right_bottom_ass.png"
+          src={rightBottomAss}
           alt=""
           height="50%"
         />
@@ -351,8 +338,13 @@ const Home = (props: HomeProps) => {
                 <h2 className="assMap" id="toMint">
                   3 SOL / MINT
                 </h2>
+                {wallet && (
+                  <p>
+                    Address: {shortenAddress(wallet.publicKey.toBase58() || "")}
+                  </p>
+                )}
                 <MintContainer>
-                  {!wallet.connected ? (
+                  {!wallet ? (
                     <ConnectButton>Connect Wallet</ConnectButton>
                   ) : (
                     <MintButton
