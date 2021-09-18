@@ -1,33 +1,57 @@
-//import { useEffect, useState } from "react";
-//import styled from "styled-components";
-//import Countdown from "react-countdown";
-//import { Button, CircularProgress, Snackbar } from "@material-ui/core";
-//import Alert from "@material-ui/lab/Alert";
-//import * as anchor from "@project-serum/anchor";
+import { useEffect, useState } from "react";
+import styled from "styled-components";
+import Countdown from "react-countdown";
+import { Button, CircularProgress, Snackbar } from "@material-ui/core";
+import Alert from "@material-ui/lab/Alert";
+import * as anchor from "@project-serum/anchor";
 //import { LAMPORTS_PER_SOL } from "@solana/web3.js";
-//import { useWallet } from "@solana/wallet-adapter-react";
-//import { WalletDialogButton } from "@solana/wallet-adapter-material-ui";
+import { useWallet } from "@solana/wallet-adapter-react";
+import { WalletDialogButton } from "@solana/wallet-adapter-material-ui";
+import leftBottomAss from "./images/left_bottom_ass.png";
+import rightBottomAss from "./images/right_bottom_ass.png";
+import croppedAss from "./images/centre ass cropped.png";
+import oneAss from "./images/ASSES/18.png";
+import twAss from "./images/ASSES/201.png";
+import trAss from "./images/ASSES/178.png";
+import frAss from "./images/ASSES/135.png";
+import fvAss from "./images/ASSES/34.png";
+import sixAss from "./images/ASSES/178.png";
+import beeAss from "./images/ASSES/SpecialAsses/Bee Ass.png";
+import titanAss from "./images/ASSES/SpecialAsses/Titan Ass.png";
+import msCaptain from "./images/ASSES/SpecialAsses/Mrs. Captain Ass.png";
+import giraffe from "./images/ASSES/SpecialAsses/Giraffe Ass.png";
+import camo from "./images/ASSES/SpecialAsses/Camo Ass.png";
+import blue from "./images/ASSES/SpecialAsses/Blue Ass.png";
+import kong from "./images/ASSES/SpecialAsses/Kong Ass.png";
+import money from "./images/ASSES/SpecialAsses/Money Ass.png";
+import biker from "./images/ASSES/SpecialAsses/Biker Ass.png";
+import green from "./images/ASSES/SpecialAsses/Green Ass.png";
+import monroe from "./images/ASSES/SpecialAsses/Monroe Ass.png";
+import pink from "./images/ASSES/SpecialAsses/Pink Ass.png";
+import wrestling from "./images/ASSES/SpecialAsses/Wrestling Ass.png";
+import flat from "./images/ASSES/SpecialAsses/World's Flattest Ass.png";
+import yellow from "./images/ASSES/SpecialAsses/Yellow Ass.png";
+import yoga from "./images/ASSES/SpecialAsses/Yoga Ass.png";
+import star from "./images/ASSES/SpecialAsses/Star Ass.png";
+import superAss from "./images/ASSES/SpecialAsses/Super Ass.png";
 
-//import {
- // CandyMachine,
-  //awaitTransactionSignatureConfirmation,
-  //getCandyMachineState,
-  //mintOneToken,
-  //shortenAddress,
-//} from "./candy-machine";
+import {
+  CandyMachine,
+  awaitTransactionSignatureConfirmation,
+  getCandyMachineState,
+  mintOneToken,
+  shortenAddress,
+} from "./candy-machine";
 
-//const ConnectButton = styled(WalletDialogButton)`
+const ConnectButton = styled(WalletDialogButton)``;
 
-//`;
+const CounterText = styled.span``; // add your styles here
 
-//const CounterText = styled.span``; // add your styles here
+const MintContainer = styled.div`margin`; // add your styles here
 
-//const MintContainer = styled.div``; // add your styles here
+const MintButton = styled(Button)`margin: 1em
+background-color: #008CBA;`; // add your styles here
 
-//const MintButton = styled(Button)`margin: 1em
-//background-color: #008CBA;`; // add your styles here
-
-/*
 export interface HomeProps {
   candyMachineId: anchor.web3.PublicKey;
   config: anchor.web3.PublicKey;
@@ -36,11 +60,9 @@ export interface HomeProps {
   treasury: anchor.web3.PublicKey;
   txTimeout: number;
 }
-*/
-//const Home = (props: HomeProps) => {
-const Home = () => {
+
+const Home = (props: HomeProps) => {
   //const [balance, setBalance] = useState<number>();
-  /*
   const [isActive, setIsActive] = useState(false); // true when countdown completes
   const [isSoldOut, setIsSoldOut] = useState(false); // true when items remaining is zero
   const [isMinting, setIsMinting] = useState(false); // true when user got to press MINT
@@ -160,171 +182,215 @@ const Home = () => {
       setCandyMachine(candyMachine);
     })();
   }, [wallet, props.candyMachineId, props.connection]);
-*/
-  /*
-<div className="header-2">
 
-    <header className=" py-2 md:py-2 ">
-      <div className="flex items-center justify-between py-3 px-5 md:px-10 ">
-
-        <div className="flex items-center gap-2">
-        <img className='w-20'src="/like-this.png" alt="mainIcon" />
-          <a href="https://deadass.io/" className="font-bold text-xl text-indigo-600 px-5">DeadAss SOL</a>
-          
-          <button className="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden" id="navbar-toggle">
-            <i className="fas fa-bars"></i>
-          </button>
-        </div>
-
-        <div className="hidden md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0" id="navbar-collapse">
-          <a href="https://twitter.com/deadasssol" className="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">
-          <img src="/icons/twitter-logoBlue.png" alt="" height="30" width="30"/>
-          </a>
-          <a href="https://discord.gg/Tc9P6JDX" className="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300"><img src="/icons/discord_logo.png" alt="" height="25" width="25"/></a>
-          
-          
-        </div>
-      </div>
-    </header>
-    </div>
-
-
-<div className="flex flex-col items-center bg-gradient-to-r from-yellow-400 to-pink-400">
-  <div className="flex flex-row justify-between flex-wrap gap-5">
-  <main className="mt-10 mb-6 home-container flex flex-col items-center">
-    <p className="mb-4 text-2xl text-center font-bold text-black text-opacity-90">3 SOL/mint</p>
-    <p className="text-lg font-bold text-black text-opacity-90 mb-4">Grab yourself a piece of dat cake</p>
-    <div className="imageCointainer">
-      <img src="./stronkAss.gif" alt="" width="450" className="gif" />
-    </div>
-    <div className= "py-20 px-20 height-40">
-    {wallet.connected && (
-        <div className="flex items-center">
-        <p>Connected with {shortenAddress(wallet.publicKey?.toBase58() || "")}</p>
-        </div>
-      )}
-
-      
-      <MintContainer>
-        {!wallet.connected ? (
-          <ConnectButton >Connect Wallet</ConnectButton>
-        ) : (
-          
-          <MintButton
-          
-            disabled={isSoldOut || isMinting || !isActive}
-            onClick={onMint}
-            variant="contained"
-          >
-            {isSoldOut ? (
-              "SOLD OUT"
-            ) : isActive ? (
-              isMinting ? (
-                <CircularProgress />
-              ) : (
-                "MINT"
-              )
-            ) : (
-              <Countdown
-                date={startDate}
-                onMount={({ completed }) => completed && setIsActive(true)}
-                onComplete={() => setIsActive(true)}
-                renderer={renderCounter}
-              />
-            )}
-          </MintButton>
-          
-        )}
-      </MintContainer>
-      </div>
-
-</main>
-<div className=" home-container flex flex-col items-center justify-center">
-    <img src="/logo.png" alt="Deadass logo" width="300"/>
-              
-    
-    
-   
-
-</div>
-
-</div>
-</div>
-<section className="bg-gradient-to-r from-pink-400 to-yellow-400 h-80 flex flex-col items-center">
-  <main className="mt-10 mb-6 home-container flex flex-col items-center">
-<p className="text-2xl"> Check us out</p>
-<p className="mt-6 text-lg"> Next best collection available on
-<div className="flex flex-col items-center ">
-  <img className = "mt-3"src="./de-logo.png" alt="DigitalEyes" width="219" height="40"/>
-  <div className="flex items-start">
-  <img className ="" src="./deadass.png" alt="" width="200" height="50" />
-  </div>
-
-</div>
-
-
-</p>
-</main>
-
-</section >
-
-<section className="Roadmap bg-red-300 h-96 flex flex-col items-center">
-  <div className="box h-96 w-96 bg-black flex flex-col items-center">
-  <p className="text-2xl font-bold uppercase text-white">RoadMap</p>
-  </div>
-  <img src="" alt="" />
-
-</section>
-
-<section className="Team bg-pink-300 ">
-  <div className="flex flex-row justify-between flex-wrap">
-  <div className="flex flex-col items-center">
-  <img className ="logo-exchange mt-6 rounded-xl border white border-4" src="./like-this.png" width="150"alt="" />
-  <p>Assgod</p>
-  <p className="text-md mt2 font-medium text-gray-200"></p>
-  </div>
-  <div className="flex flex-col items-center">
-  <img className ="logo-exchange mt-6 rounded-xl border white border-4" src="./like-this.png" width="150"alt="" />
-  <p>Assgod</p>
-  <p className="text-md mt2 font-medium text-gray-200"></p>
-  </div>
-  <div className="flex flex-col items-center">
-  <img className ="logo-exchange mt-6 rounded-xl border white border-4" src="./like-this.png" width="150"alt="" />
-  <p>Assgod</p>
-  <p className="text-md mt2 font-medium text-gray-200"></p>
-  </div>
-  <div className="flex flex-col items-center">
-  <img className ="logo-exchange mt-6 rounded-xl border white border-4" src="./like-this.png" width="150"alt="" />
-  <p>Assgod</p>
-  <p className="text-md mt2 font-medium text-gray-200"></p>
-  </div>
-  </div>
-  
-
-</section>
-*/
   return (
-    
-      <main>
-        <body className="flex items-center justify-center h-screen bg-gradient-to-b from-green-200 to-green-500" >
-            <span className="flex items-center justify-center"><img src="./images/comingsoon.png" alt="Coming soon" height="120" width="500" /></span>
-        </body>
-      
-            
+    <main>
+      <div className=" relative min-h-full py-10 flex flex-col-3 justify-center h-screen bg-purple-600">
+        <div className="flex flex-col items-center">
+          <div className="mb-8 relative container border-4 flex-col justify-center flex-grow bg-green-400">
+            <div className="flex flex-col items-center ">
+              <img
+                className="deadassLogo object-contain w-1/4 "
+                src="./images/deadass typeface.png"
+                alt=""
+              />
+              <img
+                className="croppedAss object-contain w-1/5"
+                src={croppedAss}
+                alt=""
+              />
 
+              <div className=" py-10 flex-col   bg-green-400 ">
+                <div className="intro flex flex-col items-center">
+                  <h1>The original Auto Generated Ass NFTs Project</h1>
+                  <h2>6969 Unique Asses in total</h2>
+                  <div className="flex-col justify-center ">
+                    <a href="#toMint">
+                      <button className="gotoMint rounded-full py-3 px-6 bg-yellow-300 shadow-2xl hover:bg-red-700 w-80">
+                        MINT DEAD ASS!
+                      </button>
+                    </a>
+                  </div>
+                  <div className=" flex-row justify-center"></div>
+                  <section className="flex items-center pt-8 px-4 w-1/3">
+                    <div className="flex flex-wrap mx-4">
+                      <div className="md:w-1/3 px-4 mb-8">
+                        <img
+                          className="rounded shadow-md"
+                          src={oneAss}
+                          alt=""
+                        />
+                        <h1 className="pictureText">GRAB</h1>
+                      </div>
+                      <div className="md:w-1/3 px-4 mb-8">
+                        <img className="rounded shadow-md" src={twAss} alt="" />
+                        <h1 className="pictureText">YOUR</h1>
+                      </div>
+                      <div className="md:w-1/3 px-4 mb-8">
+                        <img
+                          className=" rounded shadow-md"
+                          src={trAss}
+                          alt=""
+                        />
+                        <h1 className="pictureText">ASS</h1>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="">
+          <img
+            className=" absolute top-0 left-0 h-100 w-60"
+            src="./images/left_ass_top.png"
+            alt=""
+            height="50%"
+          />
+        </div>
 
+        <div className="">
+          <img
+            className="absolute top-0 right-0 h-100 w-60"
+            src="./images/right_ass_top.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div className="  h-full lg:py-10 md:py-20 sm:py-400 flex flex-col-3 justify-center h-screen bg-purple-600">
+        <section className=" shadow-inner container border-4 flex-col justify-center  bg-green-400 h-100 ">
+          <div className=" lg:py-10 flex flex-col items-center ">
+            <div className=" xl:my-2 rounded-lg shadow-xl borc py-2 flex-col justify-left  bg-green-600 ">
+              <div className=" px-5 assMap flex flex-col xl:gap-4 md: gap-2 ">
+                <h1 className="assTitle">ASSMAP!</h1>
+                <h1>Phase 1: Build team and get to work</h1>
+                <h2>
+                  Phase 2: Complete and deploy 6969 unique ASSets on solana
+                  Mainnet
+                </h2>
+                <h3>Phase 3: Things to come after launch</h3>
+                <div className=" toDo flex flex-col margin-right-0">
+                  <ul>
+                    <li>
+                      - Mixtape with songs from relevant artists, endorsing Dead
+                      Ass and Solana NFTs
+                    </li>
+                    <li>- 8-bit Dead Ass Game</li>
+                    <li>- Community Contests and Rewards</li>
+                    <li>
+                      - minimum 1 high quality Music Video w relevant artists
+                    </li>
+                    <li>- Collabs with adult entertainers</li>
+                    <li>- IRL AssWear (Panties, yoga shorts, boxers/briefs)</li>
+                  </ul>
+                </div>
+                <h4>Phase 4: DEAD ASS EVERYWHERE </h4>
+              </div>
+            </div>
+            <div className="flex-col justify-center "></div>
+            <div className=" flex-col justify-center"></div>
+          </div>
+        </section>
+      </div>
+      <div className=" bg-transparent overflow-hidden">
+        <div className="py-10 relative rainbow">
+          <section className="slider flex items-center justify-center w-full ">
+            <div className="md:w-1/5 py-4 mb-8 flex justify-center ">
+              <img className="zoom1 rounded shadow-md" src={kong} alt="" />
+            </div>
+            <div className=" zoom1 md:w-1/5 px-4 mb-8">
+              <img className="rounded shadow-md" src={msCaptain} alt="" />
+            </div>
+            <div className=" zoom1 md:w-1/5 py-4 mb-8">
+              <img className="rounded shadow-md" src={giraffe} alt="" />
+            </div>
+            <div className="md:w-1/5 px-4 mb-8 flex justify-center ">
+              <img className="zoom1 rounded shadow-md" src={blue} alt="" />
+            </div>
+            <div className=" zoom1  md:w-1/5 px-4 mb-8">
+              <img className="rounded shadow-md" src={camo} alt="" />
+            </div>
+            <div className=" zoom1 md:w-1/5 py-4 mb-8">
+              <img className="rounded shadow-md" src={titanAss} alt="" />
+            </div>
+            <div className=" zoom1  md:w-1/5 px-4 mb-8">
+              <img className="rounded shadow-md" src={money} alt="" />
+            </div>
+            <div className=" zoom1 md:w-1/5 py-4 mb-8">
+              <img className="rounded shadow-md" src={superAss} alt="" />
+            </div>
+            <div className="md:w-1/5 px-4 mb-8 flex justify-center ">
+              <img className="zoom1 rounded shadow-md" src={yellow} alt="" />
+            </div>
+            <div className=" zoom1  md:w-1/5 px-4 mb-8">
+              <img className="rounded shadow-md" src={biker} alt="" />
+            </div>
+          </section>
+        </div>
+      </div>
+      <div className=" relative min-h-full py-10 flex flex-col-3 justify-center h-screen bg-purple-600">
+        <img
+          className=" absolute bottom-0 left-0 h-100 w-60"
+          src="./images/left_bottom_ass.png"
+          alt=""
+          height="50%"
+        />
+        <img
+          className=" absolute bottom-0 right-0 h-100 w-60"
+          src="./images/right_bottom_ass.png"
+          alt=""
+          height="50%"
+        />
 
-    
-    
-        
-        
-        
-     
-      </main>
-  );
-};
-/*
- <Snackbar
+        <section className=" shadow-inner container border-4 flex-col justify-center flex-grow bg-green-400 h-100 ">
+          <div className=" py-10 flex flex-col items-center ">
+            <div className=" border-4 lg:px-60 py-100 md: px-0 py-10 rounded-lg shadow-xl borc py-2 flex-col justify-left  bg-green-600 ">
+              <div className="px-5 gass flex flex-col items-center lg:gap-10 md: gap-5 ">
+                <h1 className="assTitle">GRAB YOURSELF A PIECE OF DAT CAKE</h1>
+                <h2 className="assMap" id="toMint">
+                  3 SOL / MINT
+                </h2>
+                <MintContainer>
+                  {!wallet.connected ? (
+                    <ConnectButton>Connect Wallet</ConnectButton>
+                  ) : (
+                    <MintButton
+                      disabled={isSoldOut || isMinting || !isActive}
+                      onClick={onMint}
+                      variant="contained"
+                    >
+                      {isSoldOut ? (
+                        "SOLD OUT"
+                      ) : isActive ? (
+                        isMinting ? (
+                          <CircularProgress />
+                        ) : (
+                          "MINT"
+                        )
+                      ) : (
+                        <Countdown
+                          date={startDate}
+                          onMount={({ completed }) =>
+                            completed && setIsActive(true)
+                          }
+                          onComplete={() => setIsActive(true)}
+                          renderer={renderCounter}
+                        />
+                      )}
+                    </MintButton>
+                  )}
+                </MintContainer>
+                <h3 className="dbass">DON'T BE AN ASS, GET DEAD ASS</h3>
+              </div>
+            </div>
+            <div className="flex-col justify-center "></div>
+            <div className=" flex-col justify-center"></div>
+          </div>
+        </section>
+      </div>
+
+      <Snackbar
         open={alertState.open}
         autoHideDuration={6000}
         onClose={() => setAlertState({ ...alertState, open: false })}
@@ -336,6 +402,9 @@ const Home = () => {
           {alertState.message}
         </Alert>
       </Snackbar>
+    </main>
+  );
+};
 
 interface AlertState {
   open: boolean;
@@ -350,6 +419,5 @@ const renderCounter = ({ days, hours, minutes, seconds, completed }: any) => {
     </CounterText>
   );
 };
-*/
 
 export default Home;

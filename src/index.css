@@ -3,16 +3,141 @@
 @tailwind utilities;
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
+@font-face {
+  font-family: "dogica";
+  src: local("dogica"), url(./fonts/dogica.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Pixellari";
+  src: local("Pixellari"), url(./fonts/Pixellari.ttf) format("truetype");
+}
 
+.intro {
+  font-family: Pixellari;
+  font-size: x-large;
+  justify-content: center;
+  color: #134741;
+}
+.assMap {
+  font-family: Pixellari;
+  font-size: x-large;
+  justify-content: center;
+  color: #e8ff00;
+}
+.assTitle {
+  font-family: Pixellari;
+  font-size: 40px;
+  justify-content: center;
+  color: #e8ff00;
+  text-align: center;
+}
+.toDo {
+  font-family: Pixellari;
+  font-size: large;
+  justify-content: center;
+  color: #55fff3;
+}
+.gass {
+  font-family: Pixellari;
+  font-size: xx-large;
+  justify-content: center;
+  color: #134741;
+}
+.dbass {
+  font-family: Pixellari;
+  font-size: xx-large;
+  justify-content: center;
+  color: #006a09;
+}
+.gotoMint {
+  font-family: Pixellari;
+  font-size: xx-large;
+  justify-content: center;
+  color: #134741;
+}
+
+.multiImage {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 1/5;
+}
+.singleImage {
+  padding: 0 20px 20px;
+}
+
+html {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 100%;
+}
+
+.rainbow {
+  box-shadow: 0px 0px 10px 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 154, 0, 1) 10%,
+    rgba(208, 222, 33, 1) 20%,
+    rgba(79, 220, 74, 1) 30%,
+    rgba(63, 218, 216, 1) 40%,
+    rgba(47, 201, 226, 1) 50%,
+    rgba(28, 127, 238, 1) 60%,
+    rgba(95, 21, 242, 1) 70%,
+    rgba(186, 12, 248, 1) 80%,
+    rgba(251, 7, 217, 1) 90%,
+    rgba(255, 0, 0, 1) 100%
+  );
+}
+
+zoom1 {
+  transition: ease transform 0.3s;
+}
+
+.zoom1:hover:hover {
+  transform: scale(
+    1.2
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.slider {
+  background-repeat: repeat-x;
+  animation: slide 10000s linear infinite;
+  animation-duration: 10s;
+  animation-fill-mode: both;
+  background-size: 660px 83px;
+}
+@keyframes slide {
+  from {
+    transform: translateX(2100px);
+  }
+  to {
+    transform: translateX(-1900px);
+  }
+}
+@media screen and (min-width: 600px) {
+}
+
+.pictureText {
+  text-align: center;
+  font-size: x-large;
+  color: #006a09;
+}
