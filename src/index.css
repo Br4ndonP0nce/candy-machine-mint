@@ -141,3 +141,9 @@ zoom1 {
   font-size: x-large;
   color: #006a09;
 }
+
+@media (max-width: 1009px) {
+  .hiddenAss {
+    display: none;
+  }
+}

@@ -224,7 +224,7 @@ const Home = (props: HomeProps) => {
         </div>
         <div className="">
           <img
-            className=" absolute top-0 left-0 h-100 w-60"
+            className="hiddenAss absolute top-0 left-0 h-100 w-60"
             src="./images/left_ass_top.png"
             alt=""
             height="50%"
@@ -233,7 +233,7 @@ const Home = (props: HomeProps) => {
 
         <div className="">
           <img
-            className="absolute top-0 right-0 h-100 w-60"
+            className="hiddenAss absolute top-0 right-0 h-100 w-60 sm:h-50"
             src="./images/right_ass_top.png"
             alt=""
           />
@@ -312,13 +312,13 @@ const Home = (props: HomeProps) => {
       </div>
       <div className=" relative min-h-full py-10 flex flex-col-3 justify-center h-screen bg-purple-600">
         <img
-          className=" absolute bottom-0 left-0 h-100 w-60"
+          className=" hiddenAss absolute bottom-0 left-0 h-100 w-60"
           src={leftBottomAss}
           alt=""
           height="50%"
         />
         <img
-          className=" absolute bottom-0 right-0 h-100 w-60"
+          className=" hiddenAss absolute bottom-0 right-0 h-100 w-60"
           src={rightBottomAss}
           alt=""
           height="50%"
