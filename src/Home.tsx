@@ -151,12 +151,6 @@ const Home = (props: HomeProps) => {
         return;
       }
 
-      const anchorWallet = {
-        publicKey: wallet.publicKey,
-        signAllTransactions: wallet.signAllTransactions,
-        signTransaction: wallet.signTransaction,
-      } as anchor.Wallet;
-
       const { candyMachine, goLiveDate, itemsRemaining } =
         await getCandyMachineState(
           wallet as anchor.Wallet,
