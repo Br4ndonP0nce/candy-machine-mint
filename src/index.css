@@ -26,9 +26,12 @@ code {
 
 .intro {
   font-family: Pixellari;
-  font-size: x-large;
+  font-size: xx-large;
   justify-content: center;
   color: #134741;
+}
+.numberColor {
+  color: #e8ff00;
 }
 .assMap {
   font-family: Pixellari;
@@ -133,7 +136,7 @@ zoom1 {
     transform: translateX(-1900px);
   }
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1344px) {
 }
 
 .pictureText {
@@ -146,4 +149,48 @@ zoom1 {
   .hiddenAss {
     display: none;
   }
+}
+@media (max-width: 1300px) {
+  .pictureRow {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.container1 {
+  display: inline-block;
+}
+
+.grid {
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(3, 80px);
+  grid-gap: 30px;
+}
+
+.cell {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.pictureRow {
+  max-width: 100%;
+  max-height: auto;
+  width: 1/2;
+}
+
+.specialAsses {
+  width: 200px;
+  height: 200px;
+}
+
+.Assrarity {
+  font-family: Pixellari;
+  font-size: large;
+  color: #134741;
 }

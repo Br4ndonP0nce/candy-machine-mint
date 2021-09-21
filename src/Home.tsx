@@ -9,10 +9,8 @@ import * as anchor from "@project-serum/anchor";
 import { WalletDialogButton } from "@solana/wallet-adapter-material-ui";
 import leftBottomAss from "./images/left_bottom_ass.png";
 import rightBottomAss from "./images/right_bottom_ass.png";
-import croppedAss from "./images/centre ass cropped.png";
-import oneAss from "./images/ASSES/18.png";
-import twAss from "./images/ASSES/201.png";
-import trAss from "./images/ASSES/178.png";
+import croppedAss from "./images/Deadass_one_ass_trimmed.png";
+
 import { useAnchorWallet } from "@solana/wallet-adapter-react";
 import titanAss from "./images/ASSES/SpecialAsses/Titan Ass.png";
 import msCaptain from "./images/ASSES/SpecialAsses/Mrs. Captain Ass.png";
@@ -22,10 +20,28 @@ import blue from "./images/ASSES/SpecialAsses/Blue Ass.png";
 import kong from "./images/ASSES/SpecialAsses/Kong Ass.png";
 import money from "./images/ASSES/SpecialAsses/Money Ass.png";
 import biker from "./images/ASSES/SpecialAsses/Biker Ass.png";
-
 import yellow from "./images/ASSES/SpecialAsses/Yellow Ass.png";
-
 import superAss from "./images/ASSES/SpecialAsses/Super Ass.png";
+import yoga from "././images/ASSES/SpecialAsses/Yoga Ass.png";
+import inv from "././images/ASSES/SpecialAsses/Invisible Ass.png";
+import monroe from "././images/ASSES/SpecialAsses/Monroe Ass.png";
+import pat from "././images/ASSES/SpecialAsses/Star Ass.png";
+import wrestling from "././images/ASSES/SpecialAsses/Wrestling Ass.png";
+import flat from "././images/ASSES/SpecialAsses/World's Flattest Ass.png";
+import discordLogo from "./images/discrod.png";
+import twitter from "./images/twitter.png";
+import gif1 from "./images/Gifs/gif 1.gif";
+import gif2 from "./images/Gifs/gif 2.gif";
+import gif3 from "./images/Gifs/gif 3.gif";
+import gif4 from "./images/Gifs/gif 4.gif";
+import gif5 from "./images/Gifs/gif 5.gif";
+import gif6 from "./images/Gifs/gif 6.gif";
+import gif7 from "./images/Gifs/gif 7.gif";
+import gif8 from "./images/Gifs/gif 8.gif";
+import gif9 from "./images/Gifs/gif 9.gif";
+import gif10 from "./images/Gifs/gif 10.gif";
+import gif11 from "./images/Gifs/gif 11.gif";
+import gif12 from "./images/Gifs/gif special.gif";
 
 import {
   CandyMachine,
@@ -171,52 +187,22 @@ const Home = (props: HomeProps) => {
           <div className="mb-8 relative container border-4 flex-col justify-center flex-grow bg-green-400">
             <div className="flex flex-col items-center ">
               <img
-                className="deadassLogo object-contain w-1/4 "
-                src="./images/deadass typeface.png"
-                alt=""
-              />
-              <img
-                className="croppedAss object-contain w-1/5"
+                className="mb-10 deadassLogo object-contain w-1/2 "
                 src={croppedAss}
                 alt=""
               />
 
-              <div className=" py-10 flex-col   bg-green-400 ">
+              <div className="flex-col   bg-green-400 ">
                 <div className="intro flex flex-col items-center">
                   <h1>The original Auto Generated Ass NFTs Project</h1>
-                  <h2>6969 Unique Asses in total</h2>
-                  <div className="flex-col justify-center ">
+                  <h2 className="numberColor">6969 Unique Asses in total</h2>
+                  <div className="mb-2 flex-col justify-center ">
                     <a href="#toMint">
-                      <button className="gotoMint rounded-full py-3 px-6 bg-yellow-300 shadow-2xl hover:bg-red-700 w-80">
+                      <button className=" gotoMint rounded-full py-3 px-6 bg-yellow-300 shadow-2xl hover:bg-red-700 w-80">
                         MINT DEAD ASS!
                       </button>
                     </a>
                   </div>
-                  <div className=" flex-row justify-center"></div>
-                  <section className="flex items-center pt-8 px-4 w-1/3">
-                    <div className="flex flex-wrap mx-4">
-                      <div className="md:w-1/3 px-4 mb-8">
-                        <img
-                          className="rounded shadow-md"
-                          src={oneAss}
-                          alt=""
-                        />
-                        <h1 className="pictureText">GRAB</h1>
-                      </div>
-                      <div className="md:w-1/3 px-4 mb-8">
-                        <img className="rounded shadow-md" src={twAss} alt="" />
-                        <h1 className="pictureText">YOUR</h1>
-                      </div>
-                      <div className="md:w-1/3 px-4 mb-8">
-                        <img
-                          className=" rounded shadow-md"
-                          src={trAss}
-                          alt=""
-                        />
-                        <h1 className="pictureText">ASS</h1>
-                      </div>
-                    </div>
-                  </section>
                 </div>
               </div>
             </div>
@@ -240,9 +226,117 @@ const Home = (props: HomeProps) => {
         </div>
       </div>
       <div className="  h-full lg:py-10 md:py-20 sm:py-400 flex flex-col-3 justify-center h-screen bg-purple-600">
+        <section className=" shadow-inner container border-4 flex-col justify-center items-center bg-green-400 h-100 ">
+          <div className=" mt-5  gap-5  lg:py-5 flex flex-row justify-center ">
+            <div className=" flex flex-col justify-center items-center ">
+              <img
+                src={gif1}
+                alt=""
+                className="pictureRow w-40 h-40 rounded-lg"
+              />
+              <h1 className="Assrarity">Common</h1>
+            </div>
+            <div className=" flex flex-col justify-center items-center ">
+              <img
+                src={gif2}
+                alt=""
+                className="pictureRow w-40 h-40 rounded-lg"
+              />
+              <h1 className="Assrarity">Uncommon</h1>
+            </div>
+            <div className=" flex flex-col justify-center items-center ">
+              <img
+                src={gif3}
+                alt=""
+                className="pictureRow w-40 h-40 rounded-lg "
+              />
+              <h1 className="Assrarity">Uncommon+1</h1>
+            </div>
+          </div>
+          <div className=" gap-5  lg: flex flex-row justify-center ">
+            <div className=" flex flex-col justify-center items-center ">
+              <img
+                src={gif4}
+                alt=""
+                className="pictureRow w-40 h-40 rounded-lg"
+              />
+              <h1 className="Assrarity"> Rare</h1>
+            </div>
+            <div className=" flex flex-col justify-center items-center ">
+              <img
+                src={gif5}
+                alt=""
+                className="pictureRow w-40 h-40 rounded-lg"
+              />
+              <h1 className="Assrarity">Very Rare</h1>
+            </div>
+            <div className=" flex flex-col justify-center items-center ">
+              <img
+                src={gif6}
+                alt=""
+                className="pictureRow w-40 h-40 rounded-lg"
+              />
+              <h1 className="Assrarity">Super Rare</h1>
+            </div>
+          </div>
+          <div className=" gap-5  py-5 lg: flex flex-row justify-center ">
+            <div className=" flex flex-col justify-center items-center ">
+              <img
+                src={gif7}
+                alt=""
+                className="pictureRow w-40 h-40 rounded-lg"
+              />
+              <h1 className="Assrarity">Ultra Rare</h1>
+            </div>
+            <div className=" flex flex-col justify-center items-center ">
+              <img
+                src={gif8}
+                alt=""
+                className="pictureRow w-40 h-40 rounded-lg"
+              />
+              <h1 className="Assrarity">Epic</h1>
+            </div>
+            <div className=" flex flex-col justify-center items-center ">
+              <img
+                src={gif9}
+                alt=""
+                className="pictureRow w-40 h-40 rounded-lg"
+              />
+              <h1 className="Assrarity">Legend</h1>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div className="  h-full lg:py-10 md:py-20 sm:py-400 flex flex-col-3 justify-center h-screen bg-purple-600">
+        <section className=" shadow-inner container border-4 flex-col justify-center items-center bg-green-400 h-100 ">
+          <div className=" mt-10  gap-60  lg:py-5 flex flex-row justify-center ">
+            <div className=" flex flex-col justify-center items-center ">
+              <img
+                src={gif10}
+                alt=""
+                className="pictureRow w-40 h-40 rounded-lg"
+              />
+              <h1 className="Assrarity">DeadAss Rare</h1>
+            </div>
+            <div className=" flex flex-col justify-center items-center ">
+              <img
+                src={gif11}
+                alt=""
+                className="pictureRow w-40 h-40 rounded-lg"
+              />
+              <h1 className="Assrarity ">DeadAss Legendary</h1>
+            </div>
+          </div>
+          <div className=" mt-2  lg: flex flex-col justify-center items-center">
+            <img src={gif12} alt="" className="specialAsses rounded-lg" />
+            <h1 className="Assrarity ">Custom Legendary</h1>
+          </div>
+        </section>
+      </div>
+      <div className="  h-full lg:py-10 md:py-20 sm:py-400 flex flex-col-3 justify-center h-screen bg-purple-600">
         <section className=" shadow-inner container border-4 flex-col justify-center  bg-green-400 h-100 ">
           <div className=" lg:py-10 flex flex-col items-center ">
-            <div className=" xl:my-2 rounded-lg shadow-xl borc py-2 flex-col justify-left  bg-green-600 ">
+            <div className=" mt-20 xl:my-2 rounded-lg shadow-xl borc py-2 flex-col justify-left  bg-green-600 ">
               <div className=" px-5 assMap flex flex-col xl:gap-4 md: gap-2 ">
                 <h1 className="assTitle">ASSMAP!</h1>
                 <h1>Phase 1: Build team and get to work</h1>
@@ -277,35 +371,53 @@ const Home = (props: HomeProps) => {
       <div className=" bg-transparent overflow-hidden">
         <div className="py-10 relative rainbow">
           <section className="slider flex items-center justify-center w-full ">
-            <div className="md:w-1/5 py-4 mb-8 flex justify-center ">
+            <div className="md:w-1/5 py-4  ">
               <img className="zoom1 rounded shadow-md" src={kong} alt="" />
             </div>
-            <div className=" zoom1 md:w-1/5 px-4 mb-8">
+            <div className=" zoom1 md:w-1/5 ">
               <img className="rounded shadow-md" src={msCaptain} alt="" />
             </div>
-            <div className=" zoom1 md:w-1/5 py-4 mb-8">
+            <div className=" zoom1 md:w-1/5 py-4 ">
               <img className="rounded shadow-md" src={giraffe} alt="" />
             </div>
-            <div className="md:w-1/5 px-4 mb-8 flex justify-center ">
+            <div className="md:w-1/5   ">
               <img className="zoom1 rounded shadow-md" src={blue} alt="" />
             </div>
-            <div className=" zoom1  md:w-1/5 px-4 mb-8">
+            <div className=" zoom1 md:w-1/5 ">
               <img className="rounded shadow-md" src={camo} alt="" />
             </div>
-            <div className=" zoom1 md:w-1/5 py-4 mb-8">
+            <div className=" zoom1 md:w-1/5 py-4 ">
               <img className="rounded shadow-md" src={titanAss} alt="" />
             </div>
-            <div className=" zoom1  md:w-1/5 px-4 mb-8">
+            <div className=" zoom1  md:w-1/5  ">
               <img className="rounded shadow-md" src={money} alt="" />
             </div>
-            <div className=" zoom1 md:w-1/5 py-4 mb-8">
+            <div className=" zoom1 md:w-1/5 py-4 ">
               <img className="rounded shadow-md" src={superAss} alt="" />
             </div>
-            <div className="md:w-1/5 px-4 mb-8 flex justify-center ">
-              <img className="zoom1 rounded shadow-md" src={yellow} alt="" />
+            <div className="md:w-1/5   ">
+              <img className="zoom1 rounded shadow-md" src={yoga} alt="" />
             </div>
-            <div className=" zoom1  md:w-1/5 px-4 mb-8">
-              <img className="rounded shadow-md" src={biker} alt="" />
+            <div className=" zoom1  md:w-1/5  ">
+              <img className="rounded shadow-md" src={inv} alt="" />
+            </div>
+            <div className="md:w-1/5   ">
+              <img className="zoom1 rounded shadow-md" src={monroe} alt="" />
+            </div>
+            <div className=" zoom1  md:w-1/5  m">
+              <img className="rounded shadow-md" src={pat} alt="" />
+            </div>
+            <div className="md:w-1/5    ">
+              <img className="zoom1 rounded shadow-md" src={wrestling} alt="" />
+            </div>
+            <div className=" zoom1  md:w-1/5  ">
+              <img className="rounded shadow-md" src={flat} alt="" />
+            </div>
+            <div className="md:w-1/5    ">
+              <img className="zoom1 rounded shadow-md" src={biker} alt="" />
+            </div>
+            <div className=" zoom1  md:w-1/5  ">
+              <img className="rounded shadow-md" src={yellow} alt="" />
             </div>
           </section>
         </div>
@@ -330,7 +442,13 @@ const Home = (props: HomeProps) => {
               <div className="px-5 gass flex flex-col items-center lg:gap-10 md: gap-5 ">
                 <h1 className="assTitle">GRAB YOURSELF A PIECE OF DAT CAKE</h1>
                 <h2 className="assMap" id="toMint">
-                  3 SOL / MINT
+                  EARLY MINTERS (first 2300) 0.69/MINT
+                </h2>
+                <h2 className="assMap" id="toMint">
+                  1.69 FIRST ROUND
+                </h2>
+                <h2 className="assMap" id="toMint">
+                  2.69 FINAL BATCH
                 </h2>
                 {wallet && (
                   <p>
@@ -367,7 +485,21 @@ const Home = (props: HomeProps) => {
                     </MintButton>
                   )}
                 </MintContainer>
-                <h3 className="dbass">DON'T BE AN ASS, GET DEAD ASS</h3>
+                <h3 className="dbass">PREMINT LAUNCHING SOON JOIN US</h3>
+                <div className="flex flex-row items-center">
+                  <a
+                    className="anchorsSocials justify-center flex items-center"
+                    href="https://discord.gg/wd5wKU8r"
+                  >
+                    <img className="w-1/4" src={discordLogo} alt="" />
+                  </a>
+                  <a
+                    className="justify-center flex items-center"
+                    href="https://twitter.com/deadasssol"
+                  >
+                    <img className=" w-1/4" src={twitter} alt="" />
+                  </a>
+                </div>
               </div>
             </div>
             <div className="flex-col justify-center "></div>
