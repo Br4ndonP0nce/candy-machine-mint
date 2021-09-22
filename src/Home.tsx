@@ -309,7 +309,7 @@ const Home = (props: HomeProps) => {
       </div>
       <div className="  h-full lg:py-10 md:py-20 sm:py-400 flex flex-col-3 justify-center h-screen bg-purple-600">
         <section className=" shadow-inner container border-4 flex-col justify-center items-center bg-green-400 h-100 ">
-          <div className=" mt-10  gap-60  lg:py-5 flex flex-row justify-center ">
+          <div className=" mt-10  gap-40  lg:py-5 flex flex-row justify-center ">
             <div className=" flex flex-col justify-center items-center ">
               <img
                 src={gif10}
@@ -335,32 +335,45 @@ const Home = (props: HomeProps) => {
       </div>
       <div className="  h-full lg:py-10 md:py-20 sm:py-400 flex flex-col-3 justify-center h-screen bg-purple-600">
         <section className=" shadow-inner container border-4 flex-col justify-center  bg-green-400 h-100 ">
-          <div className=" lg:py-10 flex flex-col items-center ">
-            <div className=" mt-20 xl:my-2 rounded-lg shadow-xl borc py-2 flex-col justify-left  bg-green-600 ">
-              <div className=" px-5 assMap flex flex-col xl:gap-4 md: gap-2 ">
+          <div className="  flex flex-col items-center ">
+            <div className=" assmapCont mt-10  rounded-lg shadow-xl borc py-2 flex-col justify-left  bg-green-600 ">
+              <div className=" px-5 assMap flex flex-col  ">
                 <h1 className="assTitle">ASSMAP!</h1>
                 <h1>Phase 1: Build team and get to work</h1>
                 <h2>
                   Phase 2: Complete and deploy 6969 unique ASSets on solana
                   Mainnet
                 </h2>
-                <h3>Phase 3: Things to come after launch</h3>
+                <h3>Phase 3: Community</h3>
                 <div className=" toDo flex flex-col margin-right-0">
                   <ul>
+                    <li>- Build a collective of fun and humorous people</li>
                     <li>
-                      - Mixtape with songs from relevant artists, endorsing Dead
-                      Ass and Solana NFTs
+                      - Arrange Interactive Community Contests, Rewards, and
+                      Entertainment
                     </li>
-                    <li>- 8-bit Dead Ass Game</li>
-                    <li>- Community Contests and Rewards</li>
                     <li>
-                      - minimum 1 high quality Music Video w relevant artists
+                      - 10% of all royalties go towards Community Wallet,
+                      utilization determined by Community
                     </li>
-                    <li>- Collabs with adult entertainers</li>
-                    <li>- IRL AssWear (Panties, yoga shorts, boxers/briefs)</li>
                   </ul>
                 </div>
-                <h4>Phase 4: DEAD ASS EVERYWHERE </h4>
+                <h4>Phase 4: Develop the Deadass brand </h4>
+                <div className=" toDo flex flex-col margin-right-0">
+                  <ul>
+                    <li>-Create IRL Asswear (ie. actual physical underwear)</li>
+                    <li>- Create a mixtape with songs from relevant artists</li>
+                    <li>
+                      - Deadass short film, featuring some of our fav asses
+                    </li>
+
+                    <li>
+                      - Collaborations with other Artists and Entertainers
+                    </li>
+                    <li>Partnerships with other awesome SOL projects </li>
+                    <li>Orchestrate/Participate in Charitable ventures</li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div className="flex-col justify-center "></div>
@@ -368,55 +381,67 @@ const Home = (props: HomeProps) => {
           </div>
         </section>
       </div>
-      <div className=" bg-transparent overflow-hidden">
+      <div className=" belowAssmap bg-transparent overflow-hidden">
         <div className="py-10 relative rainbow">
           <section className="slider flex items-center justify-center w-full ">
-            <div className="md:w-1/5 py-4  ">
-              <img className="zoom1 rounded shadow-md" src={kong} alt="" />
+            <div className=" md:w-1/5   ">
+              <img
+                className=" sliderPic zoom1 rounded shadow-md"
+                src={kong}
+                alt=""
+              />
             </div>
-            <div className=" zoom1 md:w-1/5 ">
-              <img className="rounded shadow-md" src={msCaptain} alt="" />
+            <div className="  zoom1 md:w-1/5 ">
+              <img
+                className="sliderPic rounded shadow-md"
+                src={msCaptain}
+                alt=""
+              />
             </div>
-            <div className=" zoom1 md:w-1/5 py-4 ">
-              <img className="rounded shadow-md" src={giraffe} alt="" />
+            <div className="  zoom1 md:w-1/5  ">
+              <img
+                className="sliderPic rounded shadow-md"
+                src={giraffe}
+                alt=""
+              />
             </div>
-            <div className="md:w-1/5   ">
+            <div className="sliderPic md:w-1/5   ">
               <img className="zoom1 rounded shadow-md" src={blue} alt="" />
             </div>
-            <div className=" zoom1 md:w-1/5 ">
+            <div className="sliderPic  zoom1 md:w-1/5 ">
               <img className="rounded shadow-md" src={camo} alt="" />
             </div>
-            <div className=" zoom1 md:w-1/5 py-4 ">
+            <div className=" sliderPic zoom1 md:w-1/5  ">
               <img className="rounded shadow-md" src={titanAss} alt="" />
             </div>
-            <div className=" zoom1  md:w-1/5  ">
+            <div className="sliderPic zoom1  md:w-1/5  ">
               <img className="rounded shadow-md" src={money} alt="" />
             </div>
-            <div className=" zoom1 md:w-1/5 py-4 ">
+            <div className="sliderPic zoom1 md:w-1/5  ">
               <img className="rounded shadow-md" src={superAss} alt="" />
             </div>
-            <div className="md:w-1/5   ">
+            <div className="sliderPic md:w-1/5   ">
               <img className="zoom1 rounded shadow-md" src={yoga} alt="" />
             </div>
-            <div className=" zoom1  md:w-1/5  ">
+            <div className="sliderPic zoom1  md:w-1/5  ">
               <img className="rounded shadow-md" src={inv} alt="" />
             </div>
-            <div className="md:w-1/5   ">
+            <div className="sliderPic md:w-1/5   ">
               <img className="zoom1 rounded shadow-md" src={monroe} alt="" />
             </div>
-            <div className=" zoom1  md:w-1/5  m">
+            <div className="sliderPic  zoom1  md:w-1/5  m">
               <img className="rounded shadow-md" src={pat} alt="" />
             </div>
-            <div className="md:w-1/5    ">
+            <div className="sliderPic md:w-1/5    ">
               <img className="zoom1 rounded shadow-md" src={wrestling} alt="" />
             </div>
-            <div className=" zoom1  md:w-1/5  ">
+            <div className="sliderPic  zoom1  md:w-1/5  ">
               <img className="rounded shadow-md" src={flat} alt="" />
             </div>
-            <div className="md:w-1/5    ">
+            <div className="sliderPic md:w-1/5    ">
               <img className="zoom1 rounded shadow-md" src={biker} alt="" />
             </div>
-            <div className=" zoom1  md:w-1/5  ">
+            <div className=" sliderPic zoom1  md:w-1/5  ">
               <img className="rounded shadow-md" src={yellow} alt="" />
             </div>
           </section>
@@ -436,7 +461,7 @@ const Home = (props: HomeProps) => {
           height="50%"
         />
 
-        <section className=" shadow-inner container border-4 flex-col justify-center flex-grow bg-green-400 h-100 ">
+        <section className=" finalSection shadow-inner container border-4 flex-col justify-center flex-grow bg-green-400 h-100 ">
           <div className=" py-10 flex flex-col items-center ">
             <div className=" border-4 lg:px-60 py-100 md: px-0 py-10 rounded-lg shadow-xl borc py-2 flex-col justify-left  bg-green-600 ">
               <div className="px-5 gass flex flex-col items-center lg:gap-10 md: gap-5 ">
