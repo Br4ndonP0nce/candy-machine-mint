@@ -133,7 +133,7 @@ zoom1 {
     transform: translateX(2100px);
   }
   to {
-    transform: translateX(-1900px);
+    transform: translateX(-2300px);
   }
 }
 @media screen and (min-width: 1344px) {
@@ -206,4 +206,12 @@ zoom1 {
   font-family: Pixellari;
   font-size: large;
   color: #134741;
+}
+
+.asmah {
+  font-family: Pixellari;
+  font-size: 80px;
+  justify-content: center;
+  color: #e8ff00;
+  text-align: center;
 }

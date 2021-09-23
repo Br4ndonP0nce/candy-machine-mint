@@ -74,7 +74,7 @@ const Home = (props: HomeProps) => {
   const [isActive, setIsActive] = useState(false); // true when countdown completes
   const [isSoldOut, setIsSoldOut] = useState(false); // true when items remaining is zero
   const [isMinting, setIsMinting] = useState(false); // true when user got to press MINT
-
+  const [remItems, setRemaining] = useState<number>();
   const [alertState, setAlertState] = useState<AlertState>({
     open: false,
     message: "",
@@ -177,6 +177,7 @@ const Home = (props: HomeProps) => {
       setIsSoldOut(itemsRemaining === 0);
       setStartDate(goLiveDate);
       setCandyMachine(candyMachine);
+      setRemaining(itemsRemaining);
     })();
   }, [wallet, props.candyMachineId, props.connection]);
 
@@ -194,6 +195,7 @@ const Home = (props: HomeProps) => {
 
               <div className="flex-col   bg-green-400 ">
                 <div className="intro flex flex-col items-center">
+                  <h1>{remItems}</h1>
                   <h1>The original Auto Generated Ass NFTs Project</h1>
                   <h2 className="numberColor">6969 Unique Asses in total</h2>
                   <div className="mb-2 flex-col justify-center ">
@@ -327,9 +329,13 @@ const Home = (props: HomeProps) => {
               <h1 className="Assrarity ">DeadAss Legendary</h1>
             </div>
           </div>
+
           <div className=" mt-2  lg: flex flex-col justify-center items-center">
             <img src={gif12} alt="" className="specialAsses rounded-lg" />
             <h1 className="Assrarity ">Custom Legendary</h1>
+          </div>
+          <div className=" mt-2  lg: flex flex-col justify-center items-center">
+            <h1 className="asmah mt-60 ">ASMAP AHEAD!</h1>
           </div>
         </section>
       </div>
@@ -382,67 +388,121 @@ const Home = (props: HomeProps) => {
         </section>
       </div>
       <div className=" belowAssmap bg-transparent overflow-hidden">
-        <div className="py-10 relative rainbow">
+        <div className="py-10  rainbow">
           <section className="slider flex items-center justify-center w-full ">
-            <div className=" md:w-1/5   ">
-              <img
-                className=" sliderPic zoom1 rounded shadow-md"
-                src={kong}
-                alt=""
-              />
-            </div>
-            <div className="  zoom1 md:w-1/5 ">
-              <img
-                className="sliderPic rounded shadow-md"
-                src={msCaptain}
-                alt=""
-              />
-            </div>
-            <div className="  zoom1 md:w-1/5  ">
-              <img
-                className="sliderPic rounded shadow-md"
-                src={giraffe}
-                alt=""
-              />
-            </div>
-            <div className="sliderPic md:w-1/5   ">
-              <img className="zoom1 rounded shadow-md" src={blue} alt="" />
-            </div>
-            <div className="sliderPic  zoom1 md:w-1/5 ">
-              <img className="rounded shadow-md" src={camo} alt="" />
-            </div>
-            <div className=" sliderPic zoom1 md:w-1/5  ">
-              <img className="rounded shadow-md" src={titanAss} alt="" />
-            </div>
-            <div className="sliderPic zoom1  md:w-1/5  ">
-              <img className="rounded shadow-md" src={money} alt="" />
-            </div>
-            <div className="sliderPic zoom1 md:w-1/5  ">
-              <img className="rounded shadow-md" src={superAss} alt="" />
-            </div>
-            <div className="sliderPic md:w-1/5   ">
-              <img className="zoom1 rounded shadow-md" src={yoga} alt="" />
-            </div>
-            <div className="sliderPic zoom1  md:w-1/5  ">
-              <img className="rounded shadow-md" src={inv} alt="" />
-            </div>
-            <div className="sliderPic md:w-1/5   ">
-              <img className="zoom1 rounded shadow-md" src={monroe} alt="" />
-            </div>
-            <div className="sliderPic  zoom1  md:w-1/5  m">
-              <img className="rounded shadow-md" src={pat} alt="" />
-            </div>
-            <div className="sliderPic md:w-1/5    ">
-              <img className="zoom1 rounded shadow-md" src={wrestling} alt="" />
-            </div>
-            <div className="sliderPic  zoom1  md:w-1/5  ">
-              <img className="rounded shadow-md" src={flat} alt="" />
-            </div>
-            <div className="sliderPic md:w-1/5    ">
-              <img className="zoom1 rounded shadow-md" src={biker} alt="" />
-            </div>
-            <div className=" sliderPic zoom1  md:w-1/5  ">
-              <img className="rounded shadow-md" src={yellow} alt="" />
+            <div className="    flex flex-row ">
+              <div className=" flex flex-col justify-center items-center ">
+                <img
+                  src={titanAss}
+                  alt=""
+                  className="pictureRow w-40 h-40 rounded-lg"
+                />
+              </div>
+              <div className=" flex flex-col justify-center items-center ">
+                <img
+                  src={msCaptain}
+                  alt=""
+                  className="pictureRow w-40 h-40 rounded-lg"
+                />
+              </div>
+              <div className=" flex flex-col justify-center items-center ">
+                <img
+                  src={giraffe}
+                  alt=""
+                  className="pictureRow w-40 h-40 rounded-lg "
+                />
+              </div>
+              <div className=" flex flex-col justify-center items-center ">
+                <img
+                  src={camo}
+                  alt=""
+                  className="pictureRow w-40 h-40 rounded-lg"
+                />
+              </div>
+              <div className=" flex flex-col justify-center items-center ">
+                <img
+                  src={blue}
+                  alt=""
+                  className="pictureRow w-40 h-40 rounded-lg"
+                />
+              </div>
+              <div className=" flex flex-col justify-center items-center ">
+                <img
+                  src={kong}
+                  alt=""
+                  className="pictureRow w-40 h-40 rounded-lg "
+                />
+              </div>
+              <div className=" flex flex-col justify-center items-center ">
+                <img
+                  src={money}
+                  alt=""
+                  className="pictureRow w-40 h-40 rounded-lg"
+                />
+              </div>
+              <div className=" flex flex-col justify-center items-center ">
+                <img
+                  src={biker}
+                  alt=""
+                  className="pictureRow w-40 h-40 rounded-lg"
+                />
+              </div>
+              <div className=" flex flex-col justify-center items-center ">
+                <img
+                  src={yellow}
+                  alt=""
+                  className="pictureRow w-40 h-40 rounded-lg "
+                />
+              </div>
+              <div className=" flex flex-col justify-center items-center ">
+                <img
+                  src={superAss}
+                  alt=""
+                  className="pictureRow w-40 h-40 rounded-lg"
+                />
+              </div>
+              <div className=" flex flex-col justify-center items-center ">
+                <img
+                  src={yoga}
+                  alt=""
+                  className="pictureRow w-40 h-40 rounded-lg"
+                />
+              </div>
+              <div className=" flex flex-col justify-center items-center ">
+                <img
+                  src={inv}
+                  alt=""
+                  className="pictureRow w-40 h-40 rounded-lg "
+                />
+              </div>
+              <div className=" flex flex-col justify-center items-center ">
+                <img
+                  src={flat}
+                  alt=""
+                  className="pictureRow w-40 h-40 rounded-lg"
+                />
+              </div>
+              <div className=" flex flex-col justify-center items-center ">
+                <img
+                  src={wrestling}
+                  alt=""
+                  className="pictureRow w-40 h-40 rounded-lg "
+                />
+              </div>
+              <div className=" flex flex-col justify-center items-center ">
+                <img
+                  src={monroe}
+                  alt=""
+                  className="pictureRow w-40 h-40 rounded-lg"
+                />
+              </div>
+              <div className=" flex flex-col justify-center items-center ">
+                <img
+                  src={pat}
+                  alt=""
+                  className="pictureRow w-40 h-40 rounded-lg "
+                />
+              </div>
             </div>
           </section>
         </div>
@@ -507,6 +567,8 @@ const Home = (props: HomeProps) => {
                           renderer={renderCounter}
                         />
                       )}
+
+                      {console.log(remItems)}
                     </MintButton>
                   )}
                 </MintContainer>
