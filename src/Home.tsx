@@ -510,25 +510,13 @@ const Home = (props: HomeProps) => {
           height="50%"
         />
 
-        <section className=" finalSection shadow-inner container border-4 flex-col justify-center flex-grow bg-green-400 h-100 ">
+        <section className=" finalSection py-5 shadow-inner container border-4 flex-col justify-center flex-grow bg-green-400 h-100 ">
           <div className="  flex flex-col items-center ">
-            <div className=" border-4    rounded-lg shadow-xl borc py-2 flex-col justify-left  bg-green-600 ">
+            <div className=" border-4 rounded-lg shadow-xl borc py-2 flex-col justify-left  bg-green-600 ">
               <div className=" gass flex flex-col items-center">
                 <h1 className="assTitleFinal">
                   HOLD ON TIGHT TO THE GOOD THINGS IN LIFE
                 </h1>
-                <h2 className="assMapFinal" id="toMint">
-                  The price increases every 2323 asses minted.
-                </h2>
-                <h2 className="assMapFinal" id="toMint">
-                  0.69
-                </h2>
-                <h2 className="assMapFinal" id="toMint">
-                  1.69
-                </h2>
-                <h2 className="assMapFinal" id="toMint">
-                  2.69
-                </h2>
                 {wallet && (
                   <p>
                     Address: {shortenAddress(wallet.publicKey.toBase58() || "")}
@@ -566,6 +554,22 @@ const Home = (props: HomeProps) => {
                     </MintButton>
                   )}
                 </MintContainer>
+                <h2 className="assMapFinal" id="toMint">
+                  ONLY Solana. NO Ass, Gas or Cash.
+                </h2>
+                <h2 className="assMapFinal" id="toMint">
+                  The price increases every 2323 asses minted.
+                </h2>
+                <h2 className="assMapFinal" id="toMint">
+                  0.69
+                </h2>
+                <h2 className="assMapFinal" id="toMint">
+                  1.69
+                </h2>
+                <h2 className="assMapFinal" id="toMint">
+                  2.69
+                </h2>
+
                 <h3 className="dbass">
                   LAUNCHING ASSAP, JOIN US NOW FOR UPDATES
                 </h3>
