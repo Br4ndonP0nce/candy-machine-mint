@@ -42,6 +42,11 @@ import gif9 from "./images/Gifs/gif 9.gif";
 import gif10 from "./images/Gifs/gif 10.gif";
 import gif11 from "./images/Gifs/gif 11.gif";
 import gif12 from "./images/Gifs/gif special.gif";
+import phase1 from "./images/Asstrophy/phase1new.png";
+import phase2 from "./images/Asstrophy/phase2new.png";
+import phase3 from "./images/Asstrophy/phase3new.png";
+import phase4 from "./images/Asstrophy/phase4new.png";
+import phase5 from "./images/Asstrophy/phase5new.png";
 
 import {
   CandyMachine,
@@ -185,10 +190,10 @@ const Home = (props: HomeProps) => {
     <main>
       <div className=" relative min-h-full py-10 flex flex-col-3 justify-center h-screen bg-purple-600">
         <div className="flex flex-col items-center">
-          <div className="mb-8 relative container border-4 flex-col justify-center flex-grow bg-green-400">
+          <div className=" relative container border-4 flex-col justify-center flex-grow bg-green-400">
             <div className="flex flex-col items-center ">
               <img
-                className="mb-10 deadassLogo object-contain w-1/2 "
+                className="mb-6 deadassLogo object-contain w-1/2 "
                 src={croppedAss}
                 alt=""
               />
@@ -197,7 +202,9 @@ const Home = (props: HomeProps) => {
                 <div className="intro flex flex-col items-center">
                   <h1>{remItems}</h1>
                   <h1>The original Auto Generated Ass NFTs Project</h1>
+
                   <h2 className="numberColor">6969 Unique Asses in total</h2>
+
                   <div className="mb-2 flex-col justify-center ">
                     <a href="#toMint">
                       <button className=" gotoMint rounded-full py-3 px-6 bg-yellow-300 shadow-2xl hover:bg-red-700 w-80">
@@ -227,9 +234,31 @@ const Home = (props: HomeProps) => {
           />
         </div>
       </div>
+      <section className=" lg:py-5 md:py-5 sm:py-400 flex flex-col-3 justify-center  bg-purple-600 ">
+        <section className=" shadow-inner  flex-col-3  bg-green-400   ">
+          <div className=" border-4 container rounded-lg shadow-xl   flex-col   bg-green-600 flex items-center">
+            <div className=" gass flex flex-col items-center">
+              <h1 className="assTitle">Our ASSES are composed by :</h1>
+              <h2 className="assMapFinal" id="toMint">
+                10+ body types, and 200+ attributes
+              </h2>
+              <h2 className="assMapFinal" id="toMint">
+                which could create over 2 Million Variations
+              </h2>
+              <h2 className="assMapFinal" id="toMint">
+                6969 have been generated and deployed on chain, here are some of
+                them
+              </h2>
+            </div>
+          </div>
+          <div className="flex-col justify-center "></div>
+          <div className=" flex-col justify-center"></div>
+        </section>
+      </section>
+
       <div className="  h-full lg:py-10 md:py-20 sm:py-400 flex flex-col-3 justify-center h-screen bg-purple-600">
-        <section className=" shadow-inner container border-4 flex-col justify-center items-center bg-green-400 h-100 ">
-          <div className=" mt-5  gap-5  lg:py-5 flex flex-row justify-center ">
+        <section className=" shadow-inner container border-4 flex-col justify-center items-center bg-green-400 h-100 w-full ">
+          <div className=" mt-4  gap-5   flex flex-row justify-center ">
             <div className=" flex flex-col justify-center items-center ">
               <img
                 src={gif1}
@@ -311,7 +340,7 @@ const Home = (props: HomeProps) => {
       </div>
       <div className="  h-full lg:py-10 md:py-20 sm:py-400 flex flex-col-3 justify-center h-screen bg-purple-600">
         <section className=" shadow-inner container border-4 flex-col justify-center items-center bg-green-400 h-100 ">
-          <div className=" mt-10  gap-40  lg:py-5 flex flex-row justify-center ">
+          <div className=" mt-5  gap-20  lg:py-5 flex flex-row justify-center ">
             <div className=" flex flex-col justify-center items-center ">
               <img
                 src={gif10}
@@ -334,175 +363,135 @@ const Home = (props: HomeProps) => {
             <img src={gif12} alt="" className="specialAsses rounded-lg" />
             <h1 className="Assrarity ">Custom Legendary</h1>
           </div>
-          <div className=" mt-2  lg: flex flex-col justify-center items-center">
-            <h1 className="asmah mt-60 ">ASMAP AHEAD!</h1>
-          </div>
         </section>
       </div>
       <div className="  h-full lg:py-10 md:py-20 sm:py-400 flex flex-col-3 justify-center h-screen bg-purple-600">
         <section className=" shadow-inner container border-4 flex-col justify-center  bg-green-400 h-100 ">
           <div className="  flex flex-col items-center ">
-            <div className=" assmapCont mt-10  rounded-lg shadow-xl borc py-2 flex-col justify-left  bg-green-600 ">
-              <div className=" px-5 assMap flex flex-col  ">
-                <h1 className="assTitle">ASSMAP!</h1>
-                <h1>Phase 1: Build team and get to work</h1>
-                <h2>
-                  Phase 2: Complete and deploy 6969 unique ASSets on solana
-                  Mainnet
-                </h2>
-                <h3>Phase 3: Community</h3>
-                <div className=" toDo flex flex-col margin-right-0">
-                  <ul>
-                    <li>- Build a collective of fun and humorous people</li>
-                    <li>
-                      - Arrange Interactive Community Contests, Rewards, and
-                      Entertainment
-                    </li>
-                    <li>
-                      - 10% of all royalties go towards Community Wallet,
-                      utilization determined by Community
-                    </li>
-                  </ul>
-                </div>
-                <h4>Phase 4: Develop the Deadass brand </h4>
-                <div className=" toDo flex flex-col margin-right-0">
-                  <ul>
-                    <li>-Create IRL Asswear (ie. actual physical underwear)</li>
-                    <li>- Create a mixtape with songs from relevant artists</li>
-                    <li>
-                      - Deadass short film, featuring some of our fav asses
-                    </li>
+            <div className=" px-5 assMap flex flex-col items-center  ">
+              <h1 className="assTitle">ASSMAP!</h1>
 
-                    <li>
-                      - Collaborations with other Artists and Entertainers
-                    </li>
-                    <li>Partnerships with other awesome SOL projects </li>
-                    <li>Orchestrate/Participate in Charitable ventures</li>
-                  </ul>
-                </div>
-              </div>
+              <img className="assTrophies" src={phase1} alt="" />
+              <img className="assTrophies" src={phase2} alt="" />
+              <img className="assTrophies" src={phase3} alt="" />
             </div>
-            <div className="flex-col justify-center "></div>
-            <div className=" flex-col justify-center"></div>
           </div>
         </section>
       </div>
+      <div className="  h-full flex flex-col-3 justify-center h-screen bg-purple-600">
+        <section className=" shadow-inner container border-4 flex-col justify-center  bg-green-400 h-100 ">
+          <div className="  flex flex-col items-center ">
+            <div className=" px-5 assMap flex flex-col justify-center items-center  ">
+              <h1 className="assTitle">ASSMAP!</h1>
+
+              <img className="assTrophies" src={phase4} alt="" />
+              <div className="py-5 flex flex-col justify-center items-center">
+                <img className="assTrophies" src={phase5} alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
       <div className=" belowAssmap bg-transparent overflow-hidden">
         <div className="py-10  rainbow">
-          <section className="slider flex items-center justify-center w-full ">
+          <section className="slider  ">
             <div className="    flex flex-row ">
-              <div className=" flex flex-col justify-center items-center ">
-                <img
-                  src={titanAss}
-                  alt=""
-                  className="pictureRow w-40 h-40 rounded-lg"
-                />
-              </div>
-              <div className=" flex flex-col justify-center items-center ">
-                <img
-                  src={msCaptain}
-                  alt=""
-                  className="pictureRow w-40 h-40 rounded-lg"
-                />
-              </div>
-              <div className=" flex flex-col justify-center items-center ">
-                <img
-                  src={giraffe}
-                  alt=""
-                  className="pictureRow w-40 h-40 rounded-lg "
-                />
-              </div>
-              <div className=" flex flex-col justify-center items-center ">
-                <img
-                  src={camo}
-                  alt=""
-                  className="pictureRow w-40 h-40 rounded-lg"
-                />
-              </div>
-              <div className=" flex flex-col justify-center items-center ">
-                <img
-                  src={blue}
-                  alt=""
-                  className="pictureRow w-40 h-40 rounded-lg"
-                />
-              </div>
-              <div className=" flex flex-col justify-center items-center ">
-                <img
-                  src={kong}
-                  alt=""
-                  className="pictureRow w-40 h-40 rounded-lg "
-                />
-              </div>
-              <div className=" flex flex-col justify-center items-center ">
-                <img
-                  src={money}
-                  alt=""
-                  className="pictureRow w-40 h-40 rounded-lg"
-                />
-              </div>
-              <div className=" flex flex-col justify-center items-center ">
-                <img
-                  src={biker}
-                  alt=""
-                  className="pictureRow w-40 h-40 rounded-lg"
-                />
-              </div>
-              <div className=" flex flex-col justify-center items-center ">
-                <img
-                  src={yellow}
-                  alt=""
-                  className="pictureRow w-40 h-40 rounded-lg "
-                />
-              </div>
-              <div className=" flex flex-col justify-center items-center ">
-                <img
-                  src={superAss}
-                  alt=""
-                  className="pictureRow w-40 h-40 rounded-lg"
-                />
-              </div>
-              <div className=" flex flex-col justify-center items-center ">
-                <img
-                  src={yoga}
-                  alt=""
-                  className="pictureRow w-40 h-40 rounded-lg"
-                />
-              </div>
-              <div className=" flex flex-col justify-center items-center ">
-                <img
-                  src={inv}
-                  alt=""
-                  className="pictureRow w-40 h-40 rounded-lg "
-                />
-              </div>
-              <div className=" flex flex-col justify-center items-center ">
-                <img
-                  src={flat}
-                  alt=""
-                  className="pictureRow w-40 h-40 rounded-lg"
-                />
-              </div>
-              <div className=" flex flex-col justify-center items-center ">
-                <img
-                  src={wrestling}
-                  alt=""
-                  className="pictureRow w-40 h-40 rounded-lg "
-                />
-              </div>
-              <div className=" flex flex-col justify-center items-center ">
-                <img
-                  src={monroe}
-                  alt=""
-                  className="pictureRow w-40 h-40 rounded-lg"
-                />
-              </div>
-              <div className=" flex flex-col justify-center items-center ">
-                <img
-                  src={pat}
-                  alt=""
-                  className="pictureRow w-40 h-40 rounded-lg "
-                />
-              </div>
+              <img
+                src={titanAss}
+                alt=""
+                className="pictureRow w-40 h-40 rounded-lg"
+              />
+
+              <img
+                src={msCaptain}
+                alt=""
+                className="pictureRow w-40 h-40 rounded-lg"
+              />
+
+              <img
+                src={giraffe}
+                alt=""
+                className="pictureRow w-40 h-40 rounded-lg "
+              />
+
+              <img
+                src={camo}
+                alt=""
+                className="pictureRow w-40 h-40 rounded-lg"
+              />
+
+              <img
+                src={blue}
+                alt=""
+                className="pictureRow w-40 h-40 rounded-lg"
+              />
+
+              <img
+                src={kong}
+                alt=""
+                className="pictureRow w-40 h-40 rounded-lg "
+              />
+
+              <img
+                src={money}
+                alt=""
+                className="pictureRow w-40 h-40 rounded-lg"
+              />
+
+              <img
+                src={biker}
+                alt=""
+                className="pictureRow w-40 h-40 rounded-lg"
+              />
+
+              <img
+                src={yellow}
+                alt=""
+                className="pictureRow w-40 h-40 rounded-lg "
+              />
+
+              <img
+                src={superAss}
+                alt=""
+                className="pictureRow w-40 h-40 rounded-lg"
+              />
+
+              <img
+                src={yoga}
+                alt=""
+                className="pictureRow w-40 h-40 rounded-lg"
+              />
+
+              <img
+                src={inv}
+                alt=""
+                className="pictureRow w-40 h-40 rounded-lg "
+              />
+
+              <img
+                src={flat}
+                alt=""
+                className="pictureRow w-40 h-40 rounded-lg"
+              />
+
+              <img
+                src={wrestling}
+                alt=""
+                className="pictureRow w-40 h-40 rounded-lg "
+              />
+
+              <img
+                src={monroe}
+                alt=""
+                className="pictureRow w-40 h-40 rounded-lg"
+              />
+
+              <img
+                src={pat}
+                alt=""
+                className="pictureRow w-40 h-40 rounded-lg "
+              />
             </div>
           </section>
         </div>
@@ -522,18 +511,23 @@ const Home = (props: HomeProps) => {
         />
 
         <section className=" finalSection shadow-inner container border-4 flex-col justify-center flex-grow bg-green-400 h-100 ">
-          <div className=" py-10 flex flex-col items-center ">
-            <div className=" border-4 lg:px-60 py-100 md: px-0 py-10 rounded-lg shadow-xl borc py-2 flex-col justify-left  bg-green-600 ">
-              <div className="px-5 gass flex flex-col items-center lg:gap-10 md: gap-5 ">
-                <h1 className="assTitle">GRAB YOURSELF A PIECE OF DAT CAKE</h1>
-                <h2 className="assMap" id="toMint">
-                  EARLY MINTERS (first 2300) 0.69/MINT
+          <div className="  flex flex-col items-center ">
+            <div className=" border-4    rounded-lg shadow-xl borc py-2 flex-col justify-left  bg-green-600 ">
+              <div className=" gass flex flex-col items-center">
+                <h1 className="assTitleFinal">
+                  HOLD ON TIGHT TO THE GOOD THINGS IN LIFE
+                </h1>
+                <h2 className="assMapFinal" id="toMint">
+                  The price increases every 2323 asses minted.
                 </h2>
-                <h2 className="assMap" id="toMint">
-                  1.69 FIRST ROUND
+                <h2 className="assMapFinal" id="toMint">
+                  0.69
                 </h2>
-                <h2 className="assMap" id="toMint">
-                  2.69 FINAL BATCH
+                <h2 className="assMapFinal" id="toMint">
+                  1.69
+                </h2>
+                <h2 className="assMapFinal" id="toMint">
+                  2.69
                 </h2>
                 {wallet && (
                   <p>
@@ -572,7 +566,9 @@ const Home = (props: HomeProps) => {
                     </MintButton>
                   )}
                 </MintContainer>
-                <h3 className="dbass">PREMINT LAUNCHING SOON JOIN US</h3>
+                <h3 className="dbass">
+                  LAUNCHING ASSAP, JOIN US NOW FOR UPDATES
+                </h3>
                 <div className="flex flex-row items-center">
                   <a
                     className="anchorsSocials justify-center flex items-center"

@@ -26,7 +26,7 @@ code {
 
 .intro {
   font-family: Pixellari;
-  font-size: xx-large;
+  font-size: x-large;
   justify-content: center;
   color: #134741;
 }
@@ -41,14 +41,14 @@ code {
 }
 .assTitle {
   font-family: Pixellari;
-  font-size: 40px;
+  font-size: 30px;
   justify-content: center;
   color: #e8ff00;
   text-align: center;
 }
 .toDo {
   font-family: Pixellari;
-  font-size: large;
+  font-size: x-large;
   justify-content: center;
   color: #55fff3;
 }
@@ -60,7 +60,7 @@ code {
 }
 .dbass {
   font-family: Pixellari;
-  font-size: xx-large;
+  font-size: x-large;
   justify-content: center;
   color: #006a09;
 }
@@ -156,8 +156,11 @@ zoom1 {
   .assMapcont {
     margin-top: 10px;
   }
-  .belowAssmap {
-    margin-top: 50px;
+
+  .toDo {
+    font-size: large;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 @media (max-width: 1300px) {
@@ -168,8 +171,11 @@ zoom1 {
   .finalSection {
     padding-top: 2rem;
   }
+  .assTrophies {
+  }
 }
-
+@media (max-width: 2070px) {
+}
 .container1 {
   display: inline-block;
 }
@@ -192,9 +198,7 @@ zoom1 {
 }
 
 .pictureRow {
-  max-width: 100%;
-  max-height: auto;
-  width: 1/2;
+  width: 100%;
 }
 
 .specialAsses {
@@ -214,4 +218,33 @@ zoom1 {
   justify-content: center;
   color: #e8ff00;
   text-align: center;
+}
+
+.assTrophies {
+  width: 50%;
+}
+
+.rightText {
+  text-align: right;
+}
+.deadassTrophy {
+  width: 200px;
+  height: 230px;
+}
+.big-letters-phase5 {
+  font-size: xx-large;
+  font-family: Pixellari;
+  color: #e8ff00;
+}
+
+.assMapFinal {
+  font-size: x-large;
+  font-family: Pixellari;
+  color: #e8ff00;
+}
+
+.assTitleFinal {
+  font-size: x-large;
+  font-family: Pixellari;
+  color: #e8ff00;
 }
