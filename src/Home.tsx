@@ -239,13 +239,13 @@ const Home = (props: HomeProps) => {
           <div className=" border-4 container rounded-lg shadow-xl   flex-col   bg-green-600 flex items-center">
             <div className=" gass flex flex-col items-center">
               <h1 className="assTitle">Our ASSES are composed by :</h1>
-              <h2 className="assMapFinal" id="toMint">
+              <h2 className="assMapFinal">
                 10+ body types, and 200+ attributes
               </h2>
-              <h2 className="assMapFinal" id="toMint">
+              <h2 className="assMapFinal">
                 which could create over 2 Million Variations
               </h2>
-              <h2 className="assMapFinal" id="toMint">
+              <h2 className="assMapFinal">
                 6969 have been generated and deployed on chain, here are some of
                 them
               </h2>
@@ -265,7 +265,7 @@ const Home = (props: HomeProps) => {
                 alt=""
                 className="pictureRow w-40 h-40 rounded-lg"
               />
-              <h1 className="Assrarity">Common</h1>
+              <h1 className="Assrarity">1</h1>
             </div>
             <div className=" flex flex-col justify-center items-center ">
               <img
@@ -273,7 +273,7 @@ const Home = (props: HomeProps) => {
                 alt=""
                 className="pictureRow w-40 h-40 rounded-lg"
               />
-              <h1 className="Assrarity">Uncommon</h1>
+              <h1 className="Assrarity">2</h1>
             </div>
             <div className=" flex flex-col justify-center items-center ">
               <img
@@ -281,7 +281,7 @@ const Home = (props: HomeProps) => {
                 alt=""
                 className="pictureRow w-40 h-40 rounded-lg "
               />
-              <h1 className="Assrarity">Uncommon+1</h1>
+              <h1 className="Assrarity">3</h1>
             </div>
           </div>
           <div className=" gap-5  lg: flex flex-row justify-center ">
@@ -291,7 +291,7 @@ const Home = (props: HomeProps) => {
                 alt=""
                 className="pictureRow w-40 h-40 rounded-lg"
               />
-              <h1 className="Assrarity"> Rare</h1>
+              <h1 className="Assrarity">4</h1>
             </div>
             <div className=" flex flex-col justify-center items-center ">
               <img
@@ -299,7 +299,7 @@ const Home = (props: HomeProps) => {
                 alt=""
                 className="pictureRow w-40 h-40 rounded-lg"
               />
-              <h1 className="Assrarity">Very Rare</h1>
+              <h1 className="Assrarity">5</h1>
             </div>
             <div className=" flex flex-col justify-center items-center ">
               <img
@@ -307,7 +307,7 @@ const Home = (props: HomeProps) => {
                 alt=""
                 className="pictureRow w-40 h-40 rounded-lg"
               />
-              <h1 className="Assrarity">Super Rare</h1>
+              <h1 className="Assrarity">6</h1>
             </div>
           </div>
           <div className=" gap-5  py-5 lg: flex flex-row justify-center ">
@@ -317,7 +317,7 @@ const Home = (props: HomeProps) => {
                 alt=""
                 className="pictureRow w-40 h-40 rounded-lg"
               />
-              <h1 className="Assrarity">Ultra Rare</h1>
+              <h1 className="Assrarity">7</h1>
             </div>
             <div className=" flex flex-col justify-center items-center ">
               <img
@@ -325,7 +325,7 @@ const Home = (props: HomeProps) => {
                 alt=""
                 className="pictureRow w-40 h-40 rounded-lg"
               />
-              <h1 className="Assrarity">Epic</h1>
+              <h1 className="Assrarity">8</h1>
             </div>
             <div className=" flex flex-col justify-center items-center ">
               <img
@@ -333,7 +333,7 @@ const Home = (props: HomeProps) => {
                 alt=""
                 className="pictureRow w-40 h-40 rounded-lg"
               />
-              <h1 className="Assrarity">Legend</h1>
+              <h1 className="Assrarity">9</h1>
             </div>
           </div>
         </section>
@@ -509,7 +509,7 @@ const Home = (props: HomeProps) => {
           alt=""
           height="50%"
         />
-
+        <div id="toMint"></div>
         <section className=" finalSection py-5 shadow-inner container border-4 flex-col justify-center flex-grow bg-green-400 h-100 ">
           <div className="  flex flex-col items-center ">
             <div className=" border-4 rounded-lg shadow-xl borc py-2 flex-col justify-left  bg-green-600 ">
@@ -554,21 +554,15 @@ const Home = (props: HomeProps) => {
                     </MintButton>
                   )}
                 </MintContainer>
-                <h2 className="assMapFinal" id="toMint">
+                <h2 className="assMapFinal">
                   ONLY Solana. NO Ass, Gas or Cash.
                 </h2>
-                <h2 className="assMapFinal" id="toMint">
+                <h2 className="assMapFinal">
                   The price increases every 2323 asses minted.
                 </h2>
-                <h2 className="assMapFinal" id="toMint">
-                  0.69
-                </h2>
-                <h2 className="assMapFinal" id="toMint">
-                  1.69
-                </h2>
-                <h2 className="assMapFinal" id="toMint">
-                  2.69
-                </h2>
+                <h2 className="assMapFinal">0.69</h2>
+                <h2 className="assMapFinal">1.69</h2>
+                <h2 className="assMapFinal">2.69</h2>
 
                 <h3 className="dbass">
                   LAUNCHING ASSAP, JOIN US NOW FOR UPDATES
