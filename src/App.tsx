@@ -17,8 +17,9 @@ import {
 
 import { WalletDialogProvider } from "@solana/wallet-adapter-material-ui";
 
-import { Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import LandingPage from "./LandingPage";
+import PasswordForm from "./Components/passWordForm";
 const treasury = new anchor.web3.PublicKey(
   process.env.REACT_APP_TREASURY_ADDRESS!
 );
@@ -50,25 +51,32 @@ const App = () => {
 
   return (
     <div>
-      <Route exact path="/" component={LandingPage}>
-        <LandingPage />
-      </Route>
-      <Route exact path="/mint">
-        <ConnectionProvider endpoint={endpoint}>
-          <WalletProvider wallets={wallets} autoConnect>
-            <WalletDialogProvider>
-              <Home
-                candyMachineId={candyMachineId}
-                config={config}
-                connection={connection}
-                startDate={startDateSeed}
-                treasury={treasury}
-                txTimeout={txTimeout}
-              />
-            </WalletDialogProvider>
-          </WalletProvider>
-        </ConnectionProvider>
-      </Route>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/enter" component={PasswordForm}>
+            <PasswordForm />
+          </Route>
+          <Route exact path="/" component={LandingPage}>
+            <LandingPage />
+          </Route>
+          <Route exact path="/deadasspassword=badasspassword">
+            <ConnectionProvider endpoint={endpoint}>
+              <WalletProvider wallets={wallets} autoConnect>
+                <WalletDialogProvider>
+                  <Home
+                    candyMachineId={candyMachineId}
+                    config={config}
+                    connection={connection}
+                    startDate={startDateSeed}
+                    treasury={treasury}
+                    txTimeout={txTimeout}
+                  />
+                </WalletDialogProvider>
+              </WalletProvider>
+            </ConnectionProvider>
+          </Route>
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 };

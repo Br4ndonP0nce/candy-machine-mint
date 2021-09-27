@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import croppedAss from "./images/Deadass_one_ass_trimmed.png";
 import titanAss from "./images/ASSES/SpecialAsses/Titan Ass.png";
 import msCaptain from "./images/ASSES/SpecialAsses/Mrs. Captain Ass.png";
@@ -54,9 +54,12 @@ const LandingPage: FC = () => {
                   <h2 className="numberColor">6969 Unique Asses in total</h2>
 
                   <div className="mb-2 flex-col justify-center ">
-                    <a href="#toMint">
-                      <Link to="/mint">MINT DEAD ASS!</Link>
-                    </a>
+                    <NavLink
+                      className="gotoMint rounded-full py-3 px-6 bg-yellow-300 shadow-2xl hover:bg-red-700 w-80"
+                      to="/enter"
+                    >
+                      MINT DEAD ASS!
+                    </NavLink>
                   </div>
                 </div>
               </div>

@@ -22,6 +22,7 @@ import {
   mintOneToken,
   shortenAddress,
 } from "./candy-machine";
+import { NavLink } from "react-router-dom";
 
 const ConnectButton = styled(WalletDialogButton)``;
 
@@ -222,10 +223,14 @@ const Home = (props: HomeProps) => {
                 <h2 className="assMapFinal">0.69</h2>
                 <h2 className="assMapFinal">1.69</h2>
                 <h2 className="assMapFinal">2.69</h2>
+                <h2 className="goBack">Asses remaining = {remItems} </h2>
 
                 <h3 className="dbass">
                   LAUNCHING ASSAP, JOIN US NOW FOR UPDATES
                 </h3>
+                <NavLink className="goBack" to="/">
+                  Go back{" "}
+                </NavLink>
                 <div className="flex flex-row items-center">
                   <a
                     className="anchorsSocials justify-center flex items-center"

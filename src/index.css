@@ -248,3 +248,9 @@ zoom1 {
   font-family: Pixellari;
   color: #e8ff00;
 }
+
+.goBack {
+  text-align: center;
+  font-size: x-large;
+  color: #134741;
+}
