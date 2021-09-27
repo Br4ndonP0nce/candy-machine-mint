@@ -17,6 +17,8 @@ import {
 
 import { WalletDialogProvider } from "@solana/wallet-adapter-material-ui";
 
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import LandingPage from "./LandingPage";
 const treasury = new anchor.web3.PublicKey(
   process.env.REACT_APP_TREASURY_ADDRESS!
 );
@@ -47,20 +49,27 @@ const App = () => {
   );
 
   return (
-    <ConnectionProvider endpoint={endpoint}>
-      <WalletProvider wallets={wallets} autoConnect>
-        <WalletDialogProvider>
-          <Home
-            candyMachineId={candyMachineId}
-            config={config}
-            connection={connection}
-            startDate={startDateSeed}
-            treasury={treasury}
-            txTimeout={txTimeout}
-          />
-        </WalletDialogProvider>
-      </WalletProvider>
-    </ConnectionProvider>
+    <div>
+      <Route exact path="/" component={LandingPage}>
+        <LandingPage />
+      </Route>
+      <Route exact path="/mint">
+        <ConnectionProvider endpoint={endpoint}>
+          <WalletProvider wallets={wallets} autoConnect>
+            <WalletDialogProvider>
+              <Home
+                candyMachineId={candyMachineId}
+                config={config}
+                connection={connection}
+                startDate={startDateSeed}
+                treasury={treasury}
+                txTimeout={txTimeout}
+              />
+            </WalletDialogProvider>
+          </WalletProvider>
+        </ConnectionProvider>
+      </Route>
+    </div>
   );
 };
 
