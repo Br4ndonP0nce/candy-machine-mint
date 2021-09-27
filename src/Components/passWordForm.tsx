@@ -98,6 +98,34 @@ const PasswordForm: FC = () => {
           </div>
         </section>
       </div>
+      <div className="">
+        <div className="  flex flex-col items-center ">
+          <div className=" gass flex flex-col items-center">
+            <h1 className="assTitleFinal py-5">
+              UH OH LOOKS LIKE YOU HAVENT JOINED OUR BADASS DISCORD
+            </h1>
+
+            <div className="flex flex-row items-center">
+              <a
+                className="anchorsSocials justify-center flex items-center"
+                href="https://discord.gg/BeYDXSjekW"
+              >
+                <img className="w-1/4" src={discordLogo} alt="" />
+              </a>
+              <a
+                className="justify-center flex items-center"
+                href="https://twitter.com/deadasssol"
+              >
+                <img className=" w-1/4" src={twitter} alt="" />
+              </a>
+            </div>
+            <NavLink to="/">Go back </NavLink>
+          </div>
+
+          <div className="flex-col justify-center "></div>
+          <div className=" flex-col justify-center"></div>
+        </div>
+      </div>
     </main>
   );
 };

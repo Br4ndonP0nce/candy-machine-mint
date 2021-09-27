@@ -234,7 +234,7 @@ const Home = (props: HomeProps) => {
                 <div className="flex flex-row items-center">
                   <a
                     className="anchorsSocials justify-center flex items-center"
-                    href="https://discord.gg/wd5wKU8r"
+                    href="https://discord.gg/BeYDXSjekW"
                   >
                     <img className="w-1/4" src={discordLogo} alt="" />
                   </a>
