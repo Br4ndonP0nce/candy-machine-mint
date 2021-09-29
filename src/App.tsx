@@ -59,7 +59,7 @@ const App = () => {
           <Route exact path="/" component={LandingPage}>
             <LandingPage />
           </Route>
-          <Route exact path="/deadasspassword=badasspassword">
+          <Route exact path="/theASSsaysWhat">
             <ConnectionProvider endpoint={endpoint}>
               <WalletProvider wallets={wallets} autoConnect>
                 <WalletDialogProvider>

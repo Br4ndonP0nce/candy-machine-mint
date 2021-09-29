@@ -18,7 +18,7 @@ const PasswordForm: FC = () => {
     console.log(password);
 
     reset();
-    history.push("/deadasspassword=badasspassword");
+    history.push("/theASSsaysWhat");
   });
 
   return (
@@ -57,7 +57,7 @@ const PasswordForm: FC = () => {
                 <input
                   ref={register({
                     required: true,
-                    pattern: /funwins/,
+                    pattern: /crazyASSpassword/,
                   })}
                   name="password"
                   type="text"
