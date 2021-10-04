@@ -17,9 +17,9 @@ import {
 
 import { WalletDialogProvider } from "@solana/wallet-adapter-material-ui";
 
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import LandingPage from "./LandingPage";
-import PasswordForm from "./Components/passWordForm";
+
 const treasury = new anchor.web3.PublicKey(
   process.env.REACT_APP_TREASURY_ADDRESS!
 );
@@ -53,13 +53,10 @@ const App = () => {
     <div>
       <BrowserRouter>
         <Switch>
-          <Route exact path="/enter" component={PasswordForm}>
-            <PasswordForm />
-          </Route>
           <Route exact path="/" component={LandingPage}>
             <LandingPage />
           </Route>
-          <Route exact path="/theASSsaysWhat">
+          <Route exact path="/mint">
             <ConnectionProvider endpoint={endpoint}>
               <WalletProvider wallets={wallets} autoConnect>
                 <WalletDialogProvider>

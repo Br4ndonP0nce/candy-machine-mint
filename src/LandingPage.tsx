@@ -56,7 +56,7 @@ const LandingPage: FC = () => {
                   <div className="mb-2 flex-col justify-center ">
                     <NavLink
                       className="gotoMint rounded-full py-3 px-6 bg-yellow-300 shadow-2xl hover:bg-red-700 w-80"
-                      to="/enter"
+                      to="/mint"
                     >
                       MINT DEAD ASS!
                     </NavLink>
