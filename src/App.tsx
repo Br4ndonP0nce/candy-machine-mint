@@ -17,7 +17,7 @@ import {
 
 import { WalletDialogProvider } from "@solana/wallet-adapter-material-ui";
 
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import LandingPage from "./LandingPage";
 
 const treasury = new anchor.web3.PublicKey(
