@@ -42,10 +42,18 @@ const LandingPage: FC = () => {
           <div className=" relative container border-4 flex-col justify-center flex-grow bg-green-400">
             <div className="flex flex-col items-center ">
               <img
-                className="mb-6 deadassLogo object-contain w-1/2 "
+                className=" deadassLogo object-contain w-1/2 "
                 src={croppedAss}
                 alt=""
               />
+              <h1 className="assMapFinal">COUNTDOWN TO ASS!!!</h1>
+              <iframe
+                title="Count"
+                src="https://free.timeanddate.com/countdown/i80gnjp5/cf11/cm0/cu4/ct0/cs1/ca0/co0/cr0/ss0/cac000/cpc000/pct/tcfff/fn3/fs175/szw320/szh135/iso2021-10-06T18:00:00"
+                frameBorder="0"
+                width="533"
+                height="31"
+              ></iframe>
 
               <div className="flex-col   bg-green-400 ">
                 <div className="intro flex flex-col items-center">
