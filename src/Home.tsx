@@ -157,18 +157,35 @@ const Home = (props: HomeProps) => {
   return (
     <main>
       <div className=" relative min-h-full py-10 flex flex-col-3 justify-center h-screen bg-purple-600">
-        <img
-          className=" hiddenAss absolute bottom-0 left-0 h-100 w-60"
-          src={leftBottomAss}
-          alt=""
-          height="50%"
-        />
-        <img
-          className=" hiddenAss absolute bottom-0 right-0 h-100 w-60"
-          src={rightBottomAss}
-          alt=""
-          height="50%"
-        />
+        <button
+          onClick={async () => {
+            const { itemsRemaining } = await getCandyMachineState(
+              wallet as anchor.Wallet,
+              props.candyMachineId,
+              props.connection
+            );
+            setRemaining(itemsRemaining);
+          }}
+        >
+          <img
+            className=" hiddenAss absolute bottom-0 left-0 h-100 w-60"
+            src={leftBottomAss}
+            alt=""
+            height="50%"
+          />
+        </button>
+        <button
+          onClick={() => {
+            console.log(remItems);
+          }}
+        >
+          <img
+            className=" hiddenAss absolute bottom-0 right-0 h-100 w-60"
+            src={rightBottomAss}
+            alt=""
+            height="50%"
+          />
+        </button>
         <div id="toMint"></div>
         <section className=" finalSection py-5 shadow-inner container border-4 flex-col justify-center flex-grow bg-green-400 h-100 ">
           <div className="  flex flex-col items-center ">
