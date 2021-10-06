@@ -234,12 +234,9 @@ const Home = (props: HomeProps) => {
                 <h2 className="assMapFinal">
                   ONLY Solana. NO Ass, Gas or Cash.
                 </h2>
-                <h2 className="assMapFinal">
-                  The price increases every 2323 asses minted.
-                </h2>
+                <h2 className="assMapFinal">The price per mint is:</h2>
                 <h2 className="assMapFinal">0.69</h2>
-                <h2 className="assMapFinal">1</h2>
-                <h2 className="assMapFinal">1.69</h2>
+
                 <h2 className="goBack">Asses remaining = {remItems} </h2>
 
                 <h3 className="dbass">
