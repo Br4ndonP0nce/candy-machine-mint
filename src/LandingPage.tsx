@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { NavLink } from "react-router-dom";
-import croppedAss from "./images/Deadass_one_ass_trimmed.png";
+import croppedAss from "./images/deadass_one_ass_center_new.png";
 import titanAss from "./images/ASSES/SpecialAsses/Titan Ass.png";
 import msCaptain from "./images/ASSES/SpecialAsses/Mrs. Captain Ass.png";
 import giraffe from "./images/ASSES/SpecialAsses/Giraffe Ass.png";
@@ -46,14 +46,6 @@ const LandingPage: FC = () => {
                 src={croppedAss}
                 alt=""
               />
-              <h1 className="assMapFinal">COUNTDOWN TO ASS!!!</h1>
-              <iframe
-                title="Count"
-                src="https://free.timeanddate.com/countdown/i80gnjp5/cf11/cm0/cu4/ct0/cs1/ca0/co0/cr0/ss0/cac000/cpc000/pct/tcfff/fn3/fs175/szw320/szh135/iso2021-10-06T18:00:00"
-                frameBorder="0"
-                width="533"
-                height="31"
-              ></iframe>
 
               <div className="flex-col   bg-green-400 ">
                 <div className="intro flex flex-col items-center">
@@ -91,7 +83,7 @@ const LandingPage: FC = () => {
           />
         </div>
       </div>
-      <section className=" lg:py-5 md:py-5 sm:py-400 flex flex-col-3 justify-center  bg-purple-600 ">
+      <section className="  flex flex-col-3 justify-center  bg-purple-600 ">
         <section className=" shadow-inner  flex-col-3  bg-green-400   ">
           <div className=" border-4 container rounded-lg shadow-xl   flex-col   bg-green-600 flex items-center">
             <div className=" gass flex flex-col items-center">
@@ -106,6 +98,14 @@ const LandingPage: FC = () => {
                 6969 have been generated and deployed on chain, here are some of
                 them
               </h2>
+              <div className="mb-2 flex-col justify-center py-2 ">
+                <NavLink
+                  className="gotoMint rounded-full py-1 px-6 bg-yellow-300 shadow-2xl hover:bg-red-700 w-80"
+                  to="/rarity"
+                >
+                  RARITY CHART
+                </NavLink>
+              </div>
             </div>
           </div>
           <div className="flex-col justify-center "></div>
@@ -113,9 +113,9 @@ const LandingPage: FC = () => {
         </section>
       </section>
 
-      <div className="  h-full lg:py-10 md:py-20 sm:py-400 flex flex-col-3 justify-center h-screen bg-purple-600">
-        <section className=" shadow-inner container border-4 flex-col justify-center items-center bg-green-400 h-100 w-full ">
-          <div className=" mt-4  gap-5   flex flex-row justify-center ">
+      <div className="  h-full flex flex-col-3 justify-center h-screen bg-purple-600">
+        <section className=" shadow-inner container   border-l-4 border-r-4 flex-col justify-center items-center bg-green-400 h-100 w-full ">
+          <div className=" mt-20  gap-5   flex flex-row justify-center ">
             <div className=" flex flex-col justify-center items-center ">
               <img
                 src={gif1}
@@ -195,8 +195,8 @@ const LandingPage: FC = () => {
           </div>
         </section>
       </div>
-      <div className="  h-full lg:py-10 md:py-20 sm:py-400 flex flex-col-3 justify-center h-screen bg-purple-600">
-        <section className=" shadow-inner container border-4 flex-col justify-center items-center bg-green-400 h-100 ">
+      <div className="  h-full  flex flex-col-3 justify-center h-screen bg-purple-600">
+        <section className="  container border-r-4 border-l-4 flex-col justify-center items-center bg-green-400 h-100 ">
           <div className=" mt-5  gap-20  lg:py-5 flex flex-row justify-center ">
             <div className=" flex flex-col justify-center items-center ">
               <img
@@ -216,14 +216,14 @@ const LandingPage: FC = () => {
             </div>
           </div>
 
-          <div className=" mt-2  lg: flex flex-col justify-center items-center">
+          <div className=" mt-2  lg: flex flex-col justify-center items-center py-2">
             <img src={gif12} alt="" className="specialAsses rounded-lg" />
             <h1 className="Assrarity ">Custom Legendary</h1>
           </div>
         </section>
       </div>
-      <div className="  h-full lg:py-10 md:py-20 sm:py-400 flex flex-col-3 justify-center h-screen bg-purple-600">
-        <section className=" shadow-inner container border-4 flex-col justify-center  bg-green-400 h-100 ">
+      <div className="  h-full  flex flex-col-3 justify-center h-screen bg-purple-600">
+        <section className="  container border-r-4 border-l-4 flex-col justify-center  bg-green-400 h-100 ">
           <div className="  flex flex-col items-center ">
             <div className=" px-5 assMap flex flex-col items-center  ">
               <h1 className="assTitle">ASSMAP!</h1>
@@ -236,7 +236,7 @@ const LandingPage: FC = () => {
         </section>
       </div>
       <div className="  h-full flex flex-col-3 justify-center h-screen bg-purple-600">
-        <section className=" shadow-inner container border-4 flex-col justify-center  bg-green-400 h-100 ">
+        <section className="  container border-r-4 border-l-4 flex-col justify-center  bg-green-400 h-100 ">
           <div className="  flex flex-col items-center ">
             <div className=" px-5 assMap flex flex-col justify-center items-center  ">
               <h1 className="assTitle">ASSMAP!</h1>

@@ -69,6 +69,7 @@ code {
   font-size: xx-large;
   justify-content: center;
   color: #134741;
+  text-align: center;
 }
 
 .multiImage {
@@ -171,8 +172,6 @@ zoom1 {
   .finalSection {
     padding-top: 2rem;
   }
-  .assTrophies {
-  }
 }
 @media (max-width: 2070px) {
 }
@@ -221,7 +220,8 @@ zoom1 {
 }
 
 .assTrophies {
-  width: 50%;
+  width: 40%;
+  height: 50%;
 }
 
 .rightText {
@@ -253,4 +253,25 @@ zoom1 {
   text-align: center;
   font-size: x-large;
   color: #134741;
+}
+
+.raritiesChart {
+  width: 440px;
+  align-content: center;
+  height: auto;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.containerChart img {
+  margin: 50px;
+  transition: transform 0.2s ease;
+  cursor: zoom-in;
+}
+
+input[type="checkbox"]:checked ~ label > img {
+  transform: scale(1.5);
+  cursor: zoom-out;
 }
