@@ -9,12 +9,10 @@ import * as anchor from "@project-serum/anchor";
 import { WalletDialogButton } from "@solana/wallet-adapter-material-ui";
 import leftBottomAss from "./images/left_bottom_ass.png";
 import rightBottomAss from "./images/right_bottom_ass.png";
-
+import backAss from "./assets/hero.png";
 import { useAnchorWallet } from "@solana/wallet-adapter-react";
 
-import discordLogo from "./images/discrod.png";
-import twitter from "./images/twitter.png";
-
+import { Header } from "./Components/header";
 import {
   CandyMachine,
   awaitTransactionSignatureConfirmation,
@@ -22,16 +20,42 @@ import {
   mintOneToken,
   shortenAddress,
 } from "./candy-machine";
-import { NavLink } from "react-router-dom";
 
-const ConnectButton = styled(WalletDialogButton)``;
+const ConnectButton = styled(WalletDialogButton)`
+  color: white !important;
+  height: 40px !important;
+  width: auto !important;
+  background-color: #34d399 !important;
+  font-size: 2rem !important;
+  padding: 1.5rem 3.5rem !important;
+  font-weight: 600 !important;
+  box-shadow: 3px 3px 0 white !important;
+  transition: 0.5s !important;
+  border: 2px dashed white !important;
+  &:hover {
+    box-shadow: 0 0 0 white !important;
+    transform: translate(3px, 3px) !important;
+  }
+`;
 
 const CounterText = styled.span``; // add your styles here
 
 const MintContainer = styled.div`margin`; // add your styles here
 
-const MintButton = styled(Button)`margin: 1em
-background-color: #008CBA;`; // add your styles here
+const MintButton = styled(Button)`
+  color: white !important;
+  background-color: #34d399 !important;
+  font-size: 2rem !important;
+  padding: 1.5rem 3.5rem !important;
+  font-weight: 600 !important;
+  box-shadow: 3px 3px 0 white !important;
+  transition: 0.5s !important;
+  border: 2px dashed white !important;
+  &:hover {
+    box-shadow: 0 0 0 white !important;
+    transform: translate(3px, 3px) !important;
+  }
+`; // add your styles here
 
 export interface HomeProps {
   candyMachineId: anchor.web3.PublicKey;
@@ -156,7 +180,10 @@ const Home = (props: HomeProps) => {
 
   return (
     <main>
-      <div className=" relative min-h-full py-10 flex flex-col-3 justify-center h-screen bg-purple-600">
+      <Header />
+
+      <div className="mainContainer relative min-h-full py-10 flex flex-col-3 justify-center h-screen bg-purple-600">
+        <img className="backgroundAss" src={backAss} alt="hero" />
         <button
           onClick={async () => {
             const { itemsRemaining } = await getCandyMachineState(
@@ -187,10 +214,10 @@ const Home = (props: HomeProps) => {
           />
         </button>
         <div id="toMint"></div>
-        <section className=" finalSection py-5 shadow-inner container border-4 flex-col justify-center flex-grow bg-green-400 h-100 ">
+        <section className=" finalSection py-5  container flex-col justify-center flex-grow bg-transparent h-100  ">
           <div className="  flex flex-col items-center ">
-            <div className=" border-4 rounded-lg shadow-xl borc py-2 flex-col justify-left  bg-green-600 ">
-              <div className=" gass flex flex-col items-center">
+            <div className="  rounded-lg  borc py-2 flex-col justify-left  bg-transparent-600 ">
+              <div className=" gass flex flex-col items-center gap-5">
                 <h1 className="assTitleFinal">
                   HOLD ON TIGHT TO THE GOOD THINGS IN LIFE
                 </h1>
@@ -199,6 +226,14 @@ const Home = (props: HomeProps) => {
                     Address: {shortenAddress(wallet.publicKey.toBase58() || "")}
                   </p>
                 )}
+
+                <h2 className="assMapFinal">
+                  ONLY Solana. NO Ass, Gas or Cash.
+                </h2>
+                <h2 className="greenText">The price per mint is:</h2>
+                <h2 className="greenText">0.69</h2>
+
+                <h2 className="goBack">Asses remaining = {remItems} </h2>
                 <MintContainer>
                   {!wallet ? (
                     <ConnectButton>Connect Wallet</ConnectButton>
@@ -231,38 +266,8 @@ const Home = (props: HomeProps) => {
                     </MintButton>
                   )}
                 </MintContainer>
-                <h2 className="assMapFinal">
-                  ONLY Solana. NO Ass, Gas or Cash.
-                </h2>
-                <h2 className="assMapFinal">The price per mint is:</h2>
-                <h2 className="assMapFinal">0.69</h2>
-
-                <h2 className="goBack">Asses remaining = {remItems} </h2>
-
-                <h3 className="dbass">
-                  LAUNCHING ASSAP, JOIN US NOW FOR UPDATES
-                </h3>
-                <NavLink className="goBack" to="/">
-                  Go back{" "}
-                </NavLink>
-                <div className="flex flex-row items-center">
-                  <a
-                    className="anchorsSocials justify-center flex items-center"
-                    href="https://discord.gg/BeYDXSjekW"
-                  >
-                    <img className="w-1/4" src={discordLogo} alt="" />
-                  </a>
-                  <a
-                    className="justify-center flex items-center"
-                    href="https://twitter.com/deadasssol"
-                  >
-                    <img className=" w-1/4" src={twitter} alt="" />
-                  </a>
-                </div>
               </div>
             </div>
-            <div className="flex-col justify-center "></div>
-            <div className=" flex-col justify-center"></div>
           </div>
         </section>
       </div>

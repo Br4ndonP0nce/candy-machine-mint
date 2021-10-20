@@ -275,3 +275,22 @@ input[type="checkbox"]:checked ~ label > img {
   transform: scale(1.5);
   cursor: zoom-out;
 }
+
+.headerBase {
+  background-color: #7c3aed;
+}
+.greenText {
+  color: #34d399;
+}
+.mainContainer {
+  position: relative;
+}
+.backgroundAss {
+  width: auto;
+  height: auto;
+  position: absolute;
+
+  opacity: 5%;
+  z-index: 0;
+  filter: saturate(0);
+}
