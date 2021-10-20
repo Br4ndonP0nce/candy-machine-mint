@@ -23,7 +23,9 @@ import {
 
 const ConnectButton = styled(WalletDialogButton)`
   color: white !important;
-  height: 40px !important;
+  display: inline-block !important:
+  text-align: center !important;
+  height: auto !important;
   width: auto !important;
   background-color: #34d399 !important;
   font-size: 2rem !important;
