@@ -1,19 +1,7 @@
-import { useState } from "react";
-
 import logo from "../assets/logo.png";
 import NavBar from "./navbar";
 
 export const Header = () => {
-  const [togleMenu, setTogleMenu] = useState(false);
-
-  const openMenu = () => {
-    setTogleMenu(true);
-  };
-
-  const closeMenu = () => {
-    setTogleMenu(false);
-  };
-
   return (
     <header className="headerBase w-full bg-gray-100">
       <div className="flex items-center justify-between py-3 px-5 md:px-10">
